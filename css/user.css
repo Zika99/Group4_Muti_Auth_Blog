@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+    "nav header header"
+    "nav main aside"
+    "nav main aside";
+    background-color: #FFFFFF;
+}
+
+nav {
+    grid-area: nav;
+    position: fixed;
+    border-right: 1px solid grey;
+    height: 100vh;
+}
+
+.nav-icons img{
+    display: block;
+}
+
+header {
+    grid-area: header;
+    background-color:#315AA9;
+    color: #FFFFFF;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+.categories img{
+    display: block;
+}
