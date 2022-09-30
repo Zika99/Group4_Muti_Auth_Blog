@@ -46,11 +46,11 @@ nav ul li a{
 }
 
 .blog{
-    border-bottom: 3px solid #4BACAF;
+    border-bottom: 3px solid #192D55;
 }
 
 hr{
-    background-color: #4BACAF;
+    background-color: #192D55;
 }
 
 .line{
@@ -63,7 +63,7 @@ hr{
     height: 3px;
     outline: none;
     /* margin-top: 5px; */
-    color: #4BACAF;
+    color: #192D55;
 }
 .nav-items2{
     padding:0.5rem 1.5em;
@@ -71,7 +71,7 @@ hr{
 
 .signup{
     color: #ffffff;
-    background-color: #4BACAF;
+    background-color: #192D55;
 }
 
 header{
@@ -249,3 +249,90 @@ header{
     padding: 0.2rem 1rem;
 }
 
+footer{
+    background-color: #315AA9;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #315AA9;
+    height: 200px;
+    width: 95%;
+    margin: 0 auto;
+    color: #fff;
+    position: relative;
+    margin-top: 100px;
+    padding:3rem 1rem;
+
+}
+
+.curvv{
+    background-color: #315AA9;
+    display: flex;
+    position: relative;
+}
+
+.cv1{
+    position: absolute;
+    opacity: 0.1;
+    left: 10%;
+    /* transform: rotateX(-30deg); */
+    top: 40%;
+}
+
+.cv2{
+    position: absolute;
+    opacity: 0.1;
+    transform: rotateX(-30deg);
+    top: 15%;
+    left: 10%;
+}
+
+.cv3{
+    position: absolute;
+    opacity: 0.1;
+    top: 30%;
+    right: 0%;
+}
+
+.log{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.socials a{
+    text-decoration: none;
+}
+
+.explore ul{
+    list-style-type: none;
+    padding: 0.5rem 0;
+}
+
+.explore ul li{
+    padding: 0.3rem 0;
+}
+
+.explore ul li a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.message input{
+    padding:0.5rem 4rem;
+    border: none;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.message button{
+    margin-left: -10px;
+    padding: 0.5rem 1rem;
+    border: 0;
+    outline: 0;
+    color: white;
+    background-color: #192D55;
+}
