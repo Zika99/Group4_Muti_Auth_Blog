@@ -34,7 +34,7 @@ nav ul{
 }
 
 nav ul li a{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-decoration: none;
     color: #4a4a4a;
     
@@ -42,6 +42,28 @@ nav ul li a{
 
 .nav-items{
     padding:1rem 2.1rem;
+    margin-bottom: 5px;
+}
+
+.blog{
+    border-bottom: 3px solid #4BACAF;
+}
+
+hr{
+    background-color: #4BACAF;
+}
+
+.line{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 35px;
+    height: 3px;
+    outline: none;
+    /* margin-top: 5px; */
+    color: #4BACAF;
 }
 .nav-items2{
     padding:0.5rem 1.5em;
@@ -103,7 +125,7 @@ header{
 .spk{
     position: absolute;
     top: 20%;
-    left: 27%;
+    left: 25%;
 }
 
 .circ1{
@@ -147,7 +169,7 @@ header{
 }
 
 .container{
-    width: 94%;
+    width: 93%;
     margin: 0 auto;
 }
 
@@ -159,5 +181,50 @@ header{
 }
 
 .topics{
-    padding: 1rem;
+    padding: 1rem 0;
+    margin-bottom: 20px;
 }
+
+.card{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub{
+    color: #315AA9;
+    font-weight: 500;
+    font-size: 1.7rem;
+    word-spacing: 8px;
+}
+
+.articles{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.crdimg{
+    margin-bottom: 10px;
+}
+
+.xxx{
+    color: #4a4a4a;
+    margin-top: 25px;
+    font-size: 1.1rem;
+    /* line-height: 1.5rem; */
+    word-spacing: 7px;
+}
+
+.auth{
+    display: flex;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.name{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
