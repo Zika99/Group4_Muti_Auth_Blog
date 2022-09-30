@@ -150,11 +150,11 @@ header{
 .inp{
     margin: 0 auto;
     position: absolute;
-    bottom: -10%;
+    bottom: -20%;
     /* text-align: center; */
     left: 0;
-    width: 500px;
-    padding: 25px 90px;
+    width: 600px;
+    padding: 30px 90px;
     outline: none;
     border: none;
     border-radius: 10px;
@@ -164,8 +164,8 @@ header{
 
 .input img{
     position: absolute;
-    bottom: 2%;
-    left: 35%;
+    bottom: -7%;
+    left: 30%;
 }
 
 .container{
@@ -186,6 +186,7 @@ header{
 }
 
 .card{
+    position: relative;
     text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -206,6 +207,15 @@ header{
 
 .crdimg{
     margin-bottom: 10px;
+    /* position: relative; */
+}
+
+.ttt{
+    position: relative;
+}
+
+.cate{
+    position: absolute;
 }
 
 .xxx{
@@ -226,5 +236,16 @@ header{
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+}
+
+.badge{
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    border-radius: 6px;
+    font-size: 13px;
+    background-color: #315AA9;
+    color: #ffffff;
+    padding: 0.2rem 1rem;
 }
 
