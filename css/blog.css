@@ -336,3 +336,23 @@ footer{
     color: white;
     background-color: #192D55;
 }
+
+.wrapper{
+    height: 80vh;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.back{
+    margin-top: 20px;
+    background-color: #192D55;
+    color: white;
+    padding:0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
