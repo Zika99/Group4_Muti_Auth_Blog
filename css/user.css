@@ -113,6 +113,5 @@ aside {
 }
 
 .latest-post > .post-text {
-    margin-left: 10px;
     display: flex;
 }
