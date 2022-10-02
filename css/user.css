@@ -1,5 +1,8 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
 }
 
 body {
@@ -22,20 +25,94 @@ nav {
     display: block;
 }
 
+h1, h2, h3 {
+    font-family: 'Cascadia Code', sans-serif;
+}
+
+p {
+    font-family: 'open sans', sans-serif;
+    font-size: 15px;
+}
+
 header {
     grid-area: header;
     background-color:#315AA9;
     color: #FFFFFF;
+    margin-left: 12rem;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+header>img {
+    position: absolute;
+}
+
+.wave {
+    opacity: 0.1;
+}
+
+.one {
+    width: 35rem;
+    left: -60px;
+    top: 15px;
+}
+
+.two {
+    width: 50rem;
+    top: 0;
+    left: -65px;
+}
+
+.three {
+    width: 35rem;
+    top: 5px;
+    right: 15px;
+}
+
+.ellipse {
+    width: 2rem;
+}
+
+.first {
+    bottom: 5px;
+    right: 12rem;
+}
+
+.second {
+    left: 3rem;
+    top: 25px;
 }
 
 main {
     grid-area: main;
+    margin-left: 12rem;
+}
+
+.all-posts {
+    display: grid;
+    grid-template-columns: repeat(3, 13rem);
+    grid-column-gap: 2rem;
+    padding: 1rem;
+}
+
+.all-posts img {
+    width: 100%;
 }
 
 aside {
     grid-area: aside;
+    border-left: 1px solid grey;
 }
+
 
 .categories img{
     display: block;
+}
+
+.latest-post > .post-text {
+    margin-left: 10px;
+    display: flex;
 }
