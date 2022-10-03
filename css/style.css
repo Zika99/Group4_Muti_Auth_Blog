@@ -94,15 +94,49 @@ hr {
 
 /* Css for header */
 header {
-  background-image: url("/land\ imgs/true-wave-group.svg");
-  width: 50%;
+  /* background-image: url("/land\ imgs/true-wave-group.svg"); */
+  /* width: 100%;
+  position: relative; */
 }
 .true-wave {
   width: 100%;
   position: relative;
 }
+.true-h1 {
+  /* font-weight: 600;
+  font-size: 64px; */
+  width: 40%;
+  line-height: 50px;
+  color: #ffffff;
+}
+.true-p {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 24px;
+  width: 70%;
+  line-height: 29px;
+  padding-top: 10px;
+  font-family: "Cascadia Code", sans-serif;
+}
 .true-content {
   position: absolute;
+  /* width: 100%; */
+  bottom: -15px;
+  right: 330px;
+}
+.write-btn{
+    padding: 9px 60px;
+    background: #192D55;
+border-radius: 4px;
+border:  #192D55;
+margin-top: 60px;
+
+}
+.write-txt{
+    font-family: "Cascadia Code", sans-serif; 
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 /* Css for trending */
@@ -126,8 +160,6 @@ header {
 .left-arr {
   /* border: 1px solid #192d55; */
   width: 100%;
-
-  
 }
 .left-arrow {
   /* border: 1px solid #192d55;   */
@@ -140,8 +172,14 @@ header {
 .btn-right {
   background-color: #192d55;
   border: 1px solid #192d55;
-  padding: 4px 8px;
-  margin-left: px;
+  display: flex;
+
+align-items: flex-start;
+padding: 7px 16px;
+gap: 10px;
+
+width: 60px;
+height: 39px;
 }
 .btn-left {
   border: 1px solid #192d55;
@@ -151,6 +189,7 @@ header {
 .trend-container {
   display: flex;
   justify-content: space-evenly;
+  padding-top: 15px;
   /* padding-left: 10px; */
 }
 .sec-trend {
@@ -292,9 +331,9 @@ ul {
   font-size: 24px;
   /* margin-bottom: 50px; */
 }
-.btn-all{
-    padding: 8px 12px;
-    margin-bottom: 50px;
+.btn-all {
+  padding: 8px 12px;
+  margin-bottom: 50px;
 }
 .mon {
   color: #555555;
