@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('http://fonts.cdnfonts.com/css/cascadia-code');
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  font-style: normal;
+  font-size: 1.56rem;
+  line-height: 1.88em;
+  background-color: rgba(255, 254, 254, 1);
+  margin-bottom: 2em;
+}
+.terms-head {
+  background-color: rgba(49, 90, 169, 1);
+  color: #fffefe;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5em 2em;
+  font-family: "Cascadia Code",Consolas,'Courier New',monospace;
+  font-weight: 300;
+}
+.navbar {
+  width: 4.4rem;
+  display: block;
+}
+.navbar div {
+  height: 0.25rem;
+  background: rgba(255, 255, 255, 1);
+  margin: 0.4em 20em 0.4em 0;
+  border-radius: 1.6rem;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+.one {
+  width: 4.4rem;
+}
+.two {
+  width: 2.9rem;
+}
+.three {
+  width: 1.7rem;
+}
+.navbar:hover div {
+  width: 4.4rem;
+}
+h2 {
+  text-align: center;
+  margin: 0 auto;
+  align-self: center;
+}
+.search {
+  margin-left: auto;
+  width: 5%;
+}
+.terms-text {
+  padding: 4em;
+}
+p {
+  color: #a4a4a4;
+  margin-bottom: 1em;
+  line-height: 1.9em;
+  font-family: "Open Sans", sans-serif;
+  font-family: 400;
+}
+.terms-choice {
+  text-align: right;
+  padding-right: 4em;
+  font-size: 1.56rem;
+}
+.decline {
+  background-color: #ffffff;
+  color: #315AA9;
+  padding: 1em 2em;
+  border: none;
+}
+.agree {
+  background-color: #315AA9;
+  color: #ffffff;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 0.625rem;
+}
