@@ -22,7 +22,6 @@ body {
 	font-size: 1rem;
 	min-height: 100vh;
 	background-color: #f5f5f5;
-	color: var(--blue);
 	font-family: "Cascadia Code", sans-serif;
 }
 
@@ -56,6 +55,10 @@ main {
 	max-width: 500px;
 	margin: auto;
 	flex-grow: 1;
+}
+
+.container h1 {
+	color: var(--blue);
 }
 
 .socials {
@@ -167,12 +170,14 @@ form .submit-btn span img {
 	display: block;
 	color: var(--red);
 	margin-bottom: 3rem;
+	font-size: 0.875rem;
 }
 
 .agree-checkbox {
 	color: var(--green);
 	margin-bottom: 3rem;
 	font-size: 0.875rem;
+	text-align: left;
 }
 
 .copy {
