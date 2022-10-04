@@ -17,21 +17,75 @@ body {
 nav {
     grid-area: nav;
     position: fixed;
-    border-right: 1px solid grey;
     height: 100vh;
+    box-shadow: 2px 0 10px rgb(218, 214, 214);
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.curve3, .curve2, .curve1 {
+    position: absolute;
+    opacity: 0.3;
+}
+
+.curve3 {
+    bottom: 5rem;
+    left: 0;
+}
+
+.curve2 {
+    bottom: 2rem;
+    left: 0;
+}
+
+.curve1 {
+    bottom:-2.2rem;
+    left: 2rem;
+}
+
+.logo {
+    width: 75%;
+}
+
+.nav-icons {
+    margin: 5rem;
 }
 
 .nav-icons img{
     display: block;
+    margin-top: 2rem;
+    width: 80%;
 }
 
-h1, h2, h3 {
+.profile-pic {
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #315AA9;
+    margin: auto;
+}
+
+.profile-pic a {
+    color: #FFFFFF;
+    font-size: 35px;
+}
+
+/* h1, h2, h3 {
     font-family: 'Cascadia Code', sans-serif;
+} */
+
+.for-you {
+    padding: 2rem 0 0 1rem
 }
 
-p {
-    font-family: 'open sans', sans-serif;
-    font-size: 15px;
+.for-you-hr {
+    width: 95%;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+h4 {
+    color: #315AA9;
 }
 
 header {
@@ -93,8 +147,8 @@ main {
 
 .all-posts {
     display: grid;
-    grid-template-columns: repeat(3, 13rem);
-    grid-column-gap: 2rem;
+    grid-template-columns: repeat(3, minmax(13rem, 13rem));
+    grid-gap: 2rem;
     padding: 1rem;
 }
 
@@ -102,16 +156,61 @@ main {
     width: 100%;
 }
 
+.writer {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.writer p {
+    font-size: 12px;
+}
+
+.writer img{
+    width: 20%;
+}
+
 aside {
     grid-area: aside;
+    padding-left: 0.5rem;
     border-left: 1px solid grey;
 }
 
+#search {
+    width: 95%;
+    min-width: 15rem;
+    height: 7vh;
+    border-radius: 15px;
+    box-shadow: 2px 0 10px rgb(218, 214, 214);
+    margin-top: 2rem;
+    background: #FFFFFF url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+    padding: 0 2rem;
+    border: none;
+}
+
+.discover, .latest-post-h3 {
+    font-size: 17px;
+    padding-top: 1rem;
+}
+
+.discover-hr, .latest-post-hr {
+    margin: 0.5rem 1rem 1rem 0;
+}
+
+.categories {
+    margin-right: 1rem;
+}
 
 .categories img{
     display: block;
+    opacity: 0.5;
+    width: 100%;
 }
 
 .latest-post > .post-text {
     display: flex;
+    align-items: center;
+}
+
+.latest-post {
+    width: 90%;
 }
