@@ -1,0 +1,160 @@
+@import url('http://fonts.cdnfonts.com/css/cascadia-code');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header  */
+#header-1{
+    margin-left: 500px;
+    margin-top: 20px;
+    height: 80px;
+}
+#header-2{
+    margin-left: 20px;
+    width: 50%;
+}
+
+h1{
+    text-align: center;
+    color: #315AA9;
+    /* line-height: 77px; */
+    font-family: 'Cascadia Code';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    margin-top: 60px;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .social-icons{
+        width: 50px;
+        height: 50px;
+        margin: 50px 10px 20px;
+        border: 1px solid #315AA9;
+        /* border-radius: 50%; */
+        padding: 15px
+    }
+
+h3{
+    text-align: center;
+    font-family: 'Cascadia Code';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+    color: #315AA9;
+    margin-bottom: 30px;
+}
+
+.form{
+   text-align:center;
+}
+    input{
+        padding: 20px 150px;
+        margin: 15px 0;
+        border-radius: 20px;
+        border: 2px solid #3E71D4;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+    input[type="text"]::placeholder { 
+        font-family: 'Cascadia Code';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 34px;
+        color: #555555;
+        text-align:left;
+    } 
+    input[type="password"]::placeholder { 
+        font-family: 'Cascadia Code';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 34px;
+        color: #555555;
+        /* padding-left: -50px;  */
+    } 
+    input[type=""]::placeholder { 
+        font-family: 'Cascadia Code';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 34px;
+        color: #808080;
+        /* padding-left: -50px;  */
+    } 
+    #email{
+        background-image:  url('/sign_up-images/Vector\ \(3\).svg');
+        background-repeat: no-repeat;
+        background-position: 20px;
+        background-size: 25px;
+    }
+    #password{
+        background-image:  url('/sign_up-images/Vector\ \(4\).svg');
+        background-repeat: no-repeat;
+        background-position: 20px;
+        background-size: 25px;
+    }
+    #username{
+        background-image:  url('/sign_up-images/Vector\ \(5\).svg');
+        background-repeat: no-repeat;
+        background-position: 20px;
+        background-size: 25px;
+    }
+
+/* terms and conditions */
+.terms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#checkbox{
+    border: 2px solid #4A87FE;
+    width: 20px;
+    height: 20px;
+}
+
+span{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 33px;
+    margin-left: 10px;
+    color: #04AA47;
+}
+
+/* continue */
+p{
+    font-family: 'Cascadia Code';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+    color: #FFFFFF;
+    background: #315AA9;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 440px;
+    margin-bottom: 50px;
+    padding: 10px 0;
+}
+
+#continue-image{
+    margin-left: 10px;
+    width: 20px;
+}
