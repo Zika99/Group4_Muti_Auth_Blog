@@ -78,6 +78,7 @@ p {
   background-color: #ffffff;
   padding: 1em 2em;
   border: none;
+  font-family: "Cascadia Code",Consolas,'Courier New',monospace;
 }
 .decline a{
   text-decoration: none;
@@ -86,9 +87,10 @@ p {
 .agree {
   background-color: #315AA9;
   color: #ffffff;
-  padding: 1em 2em;
+  padding: 1em 3em;
   border: none;
   border-radius: 0.625rem;
+  font-family: "Cascadia Code",Consolas,'Courier New',monospace;
 }
 .agree:hover{
   transform: translateY(5px);
