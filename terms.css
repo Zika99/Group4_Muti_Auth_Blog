@@ -9,6 +9,9 @@
   margin: 0;
   padding: 0;
 }
+html{
+  scroll-behavior: smooth;
+}
 .container {
   font-style: normal;
   font-size: 1.56rem;
@@ -56,10 +59,6 @@ h2 {
   margin: 0 auto;
   align-self: center;
 }
-.search {
-  margin-left: auto;
-  width: 5%;
-}
 .terms-text {
   padding: 4em;
 }
@@ -77,16 +76,25 @@ p {
 }
 .decline {
   background-color: #ffffff;
-  color: #315AA9;
   padding: 1em 2em;
   border: none;
+  font-family: "Cascadia Code",Consolas,'Courier New',monospace;
+}
+.decline a{
+  text-decoration: none;
+   color: #315AA9;
 }
 .agree {
   background-color: #315AA9;
   color: #ffffff;
-  padding: 1em 2em;
+  padding: 1em 3em;
   border: none;
   border-radius: 0.625rem;
+  font-family: "Cascadia Code",Consolas,'Courier New',monospace;
+}
+.agree:hover{
+  transform: translateY(5px);
+  cursor: pointer;
 }
 a{
   color: black;
