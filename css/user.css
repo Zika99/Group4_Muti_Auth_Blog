@@ -6,11 +6,16 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'cascadia code', sans-serif;
+    font-family: Cascadia code, sans-serif;
 }
 
+h4 {
+    color: #315AA9;
+}
+
+
 p {
-    font-family: 'open sans', sans-serif;
+    font-family: open sans, sans-serif;
     color: rgb(53, 52, 52);
 }
 
@@ -22,6 +27,8 @@ body {
     "nav main aside";
     background-color: #FFFFFF;
 }
+
+/* -------------------------START OF NAV SECTION------------------------- */
 
 nav {
     grid-area: nav;
@@ -79,23 +86,8 @@ nav {
     font-size: 35px;
 }
 
-/* h1, h2, h3 {
-    font-family: 'Cascadia Code', sans-serif;
-} */
-
-.for-you {
-    padding: 2rem 0 0 1rem
-}
-
-.for-you-hr {
-    width: 95%;
-    margin: auto;
-    margin-top: 1rem;
-}
-
-h4 {
-    color: #315AA9;
-}
+/* -------------------------END OF NAV SECTION ---------------- */
+/* -------------------------START OF HEADER SECTION-------------- */
 
 header {
     grid-area: header;
@@ -149,6 +141,18 @@ header>img {
     top: 25px;
 }
 
+/* ---------------------END OF HEADER SECTION----------------------- */
+/* ---------------------START OF MAIN SECTION----------------------- */
+.for-you {
+    padding: 2rem 0 0 1rem
+}
+
+.for-you-hr {
+    width: 95%;
+    margin: auto;
+    margin-top: 1rem;
+}
+
 main {
     grid-area: main;
     margin-left: 12rem;
@@ -178,19 +182,8 @@ main {
     font-size: 13px;
 }
 
-.writer {
-    margin-top: 1rem;
-    display: flex;
-}
-
-.writer p {
-    font-size: 10px;
-}
-
-.writer img{
-    width: 20%;
-    padding-right: 10px;
-}
+/* ---------------------END OF MAIN SECTION----------------------- */
+/* -----------------------START OF ASIDE SECTION------------------ */
 
 aside {
     grid-area: aside;
@@ -264,6 +257,21 @@ aside {
 
 .latest-post {
     width: 95%;
+}
+/* -----------------------END OF ASIDE SECTION--------------- */
+/* -----------------------START OF WRITER PROFILE AND TAGS--- */
+.writer {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.writer p {
+    font-size: 10px;
+}
+
+.writer img{
+    width: 20%;
+    padding-right: 10px;
 }
 
 .tag {
