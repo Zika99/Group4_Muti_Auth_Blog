@@ -101,7 +101,7 @@ a:hover{
     font-family: "Open Sans", sans-serif;
 }
 h1{
-    color:rgba(62, 113, 212, 1);
+    color:#3e71d4;
     margin-bottom: 0.5em;
     font-weight: 800;
 }
@@ -113,7 +113,7 @@ h1{
 footer{
     background-image: url(images/wave.png);
     background-repeat: no-repeat;
-    background-color: rgba(49, 90, 169, 1);
+    background-color: #315aa9;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     color: #fff;
