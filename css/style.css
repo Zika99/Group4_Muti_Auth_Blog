@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap");
-@importurl ('http://fonts.cdnfonts.com/css/cascadia-code');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('http://fonts.cdnfonts.com/css/cascadia-code');
 * {
   margin: 0;
   padding: 0;
@@ -582,7 +582,7 @@ footer {
 }
 
 .message input {
-  padding: 0.5rem 4rem;
+  /* padding: 0.5rem 4rem; */
   border: none;
   outline: none;
   border-radius: 5px 0 0 5px;

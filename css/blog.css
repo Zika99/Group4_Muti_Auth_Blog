@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('http://fonts.cdnfonts.com/css/cascadia-code');
 
 * {
@@ -10,10 +11,17 @@
     font-family: 'cascadia-code', sans-serif;
     width: 100%;
     max-width: 1440px;
+    /* font-family: 'cascadia-code', sans-serif; */
   }
+
+  html{
+    scroll-behavior: smooth;
+}
   
   .navbar {
+    font-family: "Cascadia Code",Consolas,'Courier New',monospace;
     margin-top: 1rem;
+    font-weight: 600;
     width: 100%;
     margin: 10px auto;
     display: flex;
@@ -25,11 +33,11 @@
   
   .logo {
     display: flex;
-    flex-basis: 15%;
+    flex-basis: 10%;
   }
   
   .logo img {
-    width: 80%;
+    width: 90%;
   }
   
   .list1 {
@@ -63,7 +71,7 @@
   }
   
   hr {
-    background-color: #192d55;
+    background-color: #3e71d4;;
   }
   
   .line {
@@ -85,6 +93,7 @@
   .signup {
     color: #ffffff;
     background-color: #192d55;
+    border-radius: 15px;
   }
   
   header {
@@ -109,6 +118,7 @@
   }
   
   .header h3 {
+    font-family: "Cascadia Code",Consolas,'Courier New',monospace;
     color: #ffffff;
     text-align: center;
     font-size: 3rem;
@@ -178,15 +188,29 @@
   }
   
   .tp {
+    width: 97.5%;
+    font-family: "Cascadia Code",Consolas,'Courier New',monospace;
     display: flex;
+    font-weight: 600;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
   }
   
   .topics {
-    padding: 1rem 0;
+    padding: 0.8rem 0;
     margin-bottom: 20px;
+  }
+
+  .all{
+    background-color: #192d55;
+    padding: 10px 12px;
+    color: #fff;
+    border-radius: 10px;
+  }
+
+  .all a{
+    color: #fff;
   }
   
   .card {
@@ -199,8 +223,9 @@
   }
   
   .sub {
-    color: #315aa9;
-    font-weight: 500;
+    color: #3e71d4;;
+    font-family: "Cascadia Code",Consolas,'Courier New',monospace;
+    font-weight: 600;
     font-size: 1.7rem;
     word-spacing: 8px;
   }
@@ -208,14 +233,14 @@
   .articles {
     /*the grid was bigger than the body, it overflowed*/
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
   
-    gap: 30px;
+    gap: 40px;
   }
   /*added a new class for the images in the article we need to make them reposive and not static */
   .article-img {
-    width: 390px;
-    height: 390px;
+    width: 370px;
+    height: 370px;
   }
   .crdimg {
     /* margin-top: 10px; */
@@ -231,6 +256,7 @@
     color: #4a4a4a;
     margin-top: 25px;
     font-size: 1.1rem;
+    font-family: sans-serif;
     /* line-height: 1.5rem; */
     word-spacing: 7px;
   }
@@ -242,6 +268,7 @@
   }
   
   .name {
+    font-family: sans-serif;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
