@@ -8,6 +8,7 @@
   }
   
   body {
+    font-family: 'cascadia-code', sans-serif;
     width: 100%;
     max-width: 1440px;
     /* font-family: 'cascadia-code', sans-serif; */
