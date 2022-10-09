@@ -5,6 +5,20 @@
     text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: Cascadia code, sans-serif;
+}
+
+h4 {
+    color: #315AA9;
+}
+
+
+p {
+    font-family: open sans, sans-serif;
+    color: rgb(53, 52, 52);
+}
+
 body {
     display: grid;
     grid-template-areas: 
@@ -13,6 +27,8 @@ body {
     "nav main aside";
     background-color: #FFFFFF;
 }
+
+/* -------------------------START OF NAV SECTION------------------------- */
 
 nav {
     grid-area: nav;
@@ -70,23 +86,8 @@ nav {
     font-size: 35px;
 }
 
-/* h1, h2, h3 {
-    font-family: 'Cascadia Code', sans-serif;
-} */
-
-.for-you {
-    padding: 2rem 0 0 1rem
-}
-
-.for-you-hr {
-    width: 95%;
-    margin: auto;
-    margin-top: 1rem;
-}
-
-h4 {
-    color: #315AA9;
-}
+/* -------------------------END OF NAV SECTION ---------------- */
+/* -------------------------START OF HEADER SECTION-------------- */
 
 header {
     grid-area: header;
@@ -140,6 +141,18 @@ header>img {
     top: 25px;
 }
 
+/* ---------------------END OF HEADER SECTION----------------------- */
+/* ---------------------START OF MAIN SECTION----------------------- */
+.for-you {
+    padding: 2rem 0 0 1rem
+}
+
+.for-you-hr {
+    width: 95%;
+    margin: auto;
+    margin-top: 1rem;
+}
+
 main {
     grid-area: main;
     margin-left: 12rem;
@@ -156,18 +169,21 @@ main {
     width: 100%;
 }
 
-.writer {
-    margin-top: 1rem;
-    display: flex;
+.post {
+    display: grid;
 }
 
-.writer p {
-    font-size: 12px;
+.post-img-and-header {
+    padding-bottom: 5px;
+    position: relative;
 }
 
-.writer img{
-    width: 20%;
+.post-par {
+    font-size: 13px;
 }
+
+/* ---------------------END OF MAIN SECTION----------------------- */
+/* -----------------------START OF ASIDE SECTION------------------ */
 
 aside {
     grid-area: aside;
@@ -196,8 +212,25 @@ aside {
     margin: 0.5rem 1rem 1rem 0;
 }
 
+.see-all {
+    text-decoration: underline;
+    color: #315AA9;
+    display: inline-block;
+    margin: 2px 0;
+    font-size: 15px;
+}
+
+.see-all:hover {
+    color: rgb(53, 52, 52);
+    text-decoration: none;
+}
+
 .categories {
     margin-right: 1rem;
+}
+
+.cat {
+    position: relative;
 }
 
 .categories img{
@@ -210,7 +243,56 @@ aside {
     display: flex;
     align-items: center;
 }
+.post-text {
+    margin-bottom: 5px;
+}
+
+#latest-h5 a {
+    color: rgb(53, 52, 52);
+}
+
+.latest-post img {
+    margin-right: 10px;
+}
 
 .latest-post {
-    width: 90%;
+    width: 95%;
+}
+/* -----------------------END OF ASIDE SECTION--------------- */
+/* -----------------------START OF WRITER PROFILE AND TAGS--- */
+.writer {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.writer p {
+    font-size: 10px;
+}
+
+.writer img{
+    width: 20%;
+    padding-right: 10px;
+}
+
+.tag {
+    background-color: #315AA9;
+    width: fit-content;
+    padding: 3px 5px;
+    font-size: 10px;
+    border-radius: 8px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.cat-tag {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.tag p {
+    color: #FFFFFF;
 }
