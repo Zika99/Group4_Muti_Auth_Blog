@@ -1,5 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('http://fonts.cdnfonts.com/css/cascadia-code');
+ @import url('http://fonts.cdnfonts.com/css/cascadia-code');
+ 
+@import url('http://fonts.cdnfonts.com/css/open-sans');
+                
+                
 
 * {
     margin: 0;
@@ -19,9 +22,9 @@
 }
   
   .navbar {
-    font-family: "Cascadia Code",Consolas,'Courier New',monospace;
+    font-family: 'Cascadia Code', sans-serif;
     margin-top: 1rem;
-    font-weight: 600;
+    /* font-weight: 600; */
     width: 100%;
     margin: 10px auto;
     display: flex;
@@ -118,7 +121,7 @@
   }
   
   .header h3 {
-    font-family: "Cascadia Code",Consolas,'Courier New',monospace;
+    font-family: 'Cascadia Code', sans-serif;
     color: #ffffff;
     text-align: center;
     font-size: 3rem;
@@ -162,6 +165,8 @@
   }
   
   .inp {
+    font-family: 'Cascadia Code', sans-serif;
+                                                
     margin: 0 auto;
     position: absolute;
     bottom: -20%;
@@ -219,7 +224,8 @@
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    /* height: 600px; */
+    /* height: 650px; */
+    /* white-space: nowrap; */
   }
   
   .sub {
@@ -227,6 +233,8 @@
     font-family: "Cascadia Code",Consolas,'Courier New',monospace;
     font-weight: 600;
     font-size: 1.7rem;
+    margin-bottom: 25px;
+    line-height: 1.8rem;
     word-spacing: 8px;
   }
   
@@ -241,6 +249,11 @@
   .article-img {
     width: 370px;
     height: 370px;
+    border-radius: px;
+  }
+
+  .first{
+    border-radius: 80px;
   }
   .crdimg {
     /* margin-top: 10px; */
@@ -254,8 +267,9 @@
   
   .xxx {
     color: #4a4a4a;
-    margin-top: 25px;
-    font-size: 1.1rem;
+    /* margin-top: 25px; */
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
     font-family: sans-serif;
     /* line-height: 1.5rem; */
     word-spacing: 7px;
@@ -272,6 +286,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+    font-family: "Cascadia Code",Consolas,'Courier New',monospace;
   }
   
   
@@ -316,10 +331,12 @@
   .explore ul {
     list-style-type: none;
     padding: 0.5rem 0;
+    cursor: pointer;
   }
   
   .explore ul li {
     padding: 0.3rem 0;
+    cursor: pointer;
   }
   
   .explore ul li a {
@@ -342,8 +359,10 @@
     border: 0;
     outline: 0;
     color: white;
+    border-radius: 10px;
     background-color: #192d55;
   }
+
   
   .wrapper {
     height: 80vh;
