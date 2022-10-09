@@ -9,6 +9,23 @@
   margin: 0;
   padding: 0;
 }
+::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(218, 215, 215); 
+  border-radius: 1.25rem;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #315AA9; 
+  border-radius: 1.25rem;
+  height: 15rem;
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -43,16 +60,16 @@ html{
   -webkit-transition: all 0.5s;
 }
 .one {
-  width: 4.4rem;
+  width: 4rem;
 }
 .two {
-  width: 2.9rem;
+  width: 2.5rem;
 }
 .three {
-  width: 1.7rem;
+  width: 1.4rem;
 }
 .navbar:hover div {
-  width: 4.4rem;
+  width: 4rem;
 }
 h2 {
   text-align: center;
