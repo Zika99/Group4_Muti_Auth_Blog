@@ -1,0 +1,167 @@
+@import url('http://fonts.cdnfonts.com/css/cascadia-code');
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing:border-box;
+ list-style: none;
+ text-decoration: none;
+ font-family: 'cascadia-code', sans-serif;
+}
+body{
+ font-family: 'cascadia-code', sans-serif;
+}
+
+.wraper{
+ position: relative;
+ display:flex;
+}
+
+.top{
+    display: flex;
+}
+
+.container{
+    height: 100vh;
+    height: 100%;
+    width: 10vw;
+    /* float: right; */
+    position: fixed;
+    right: 0;
+    z-index: 1000000000;
+    color: #192D55;
+    /* background: #ffffff; */
+    box-shadow: 1px 1px 9px 5px rgba(0, 0, 0, 0.1);;
+    overflow: auto;
+}
+
+.container .logo{
+    width: 80px;
+    margin-top: 30px;
+    align-items: center;
+    display: flex;
+    margin: auto;
+   }
+   
+   .container .logo-div{
+    margin-top: 30px;
+    margin-bottom: 80px;
+   }
+   .link{
+    display: block;
+    padding: 12px;
+    margin: auto;
+   }
+   
+   .container ul li img{
+    display: block;
+    width: 20px;
+    height: 25px;
+    margin: auto;
+   }
+   
+   
+   .rounded-A{
+    text-align: center;
+   font-weight: 600;
+   font-size: 20px;
+   color: #fff;
+   background: #3E71D4;
+   /* width: 53px; */
+   height: 90px;
+   /* margin: auto; */
+   /* margin-top: 80px; */
+   border-radius: 50%;
+   }
+   
+   ul li{
+    padding-left: 15px;
+   }
+
+
+   header{
+    padding-top: 50px;
+    padding-bottom: 10px;
+    width: 90%;
+    border-bottom: 1px solid #4a4a4a;
+   }
+
+   .top{
+    /* border-bottom: 1px solid #4a4a4a; */
+    width: 93%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+   }
+
+   .right{
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: space-between; */
+   }
+
+   .logo{
+    /* width: 90%; */
+    /* margin-left: -90%; */
+   }
+
+   .preview{
+    background-color: #fff;
+    text-decoration: none;
+    padding:0.5rem 2rem;
+    border-radius: 10px;
+    margin-right: 10px;
+    border: 1px solid #3E71D4;
+    color: #4a4a4a;
+   }
+
+   .publish{
+    /* background-color: #fff; */
+    text-decoration: none;
+    padding:0.5rem 2rem;
+    margin-right: 15px;
+    border-radius: 10px;
+    background-color: #3E71D4;
+    border: 1px solid #3E71D4;
+    opacity: 0.4;
+    color: #fff;
+   }
+
+   .main{
+    width: 90%;
+   }
+
+   .tit{
+    font-size: 3rem;
+   }
+
+   input{
+    width: 85%;
+    height: 70px;
+    resize: horizontal;
+    font-size: 3rem;
+    border: none;
+    outline: none;
+   }
+
+   textarea{
+    width: 85%;
+    outline: none;
+    height: 59px;
+    padding: 15px;
+    margin-top: 20px;
+    border-color: grey;
+    /* border: none; */
+    resize: none;
+    /* margin: 5px 20px; */
+   }
+
+   textarea :is(:focus, :valid){
+    border-color: pink;
+    border-width: 2px;
+    padding: 14px;
+   }
+
+   textarea::-webkit-scrollbar{
+    width: 0px;
+   }
+
