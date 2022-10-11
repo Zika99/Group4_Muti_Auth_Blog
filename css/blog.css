@@ -25,7 +25,7 @@
     font-family: 'Cascadia Code', sans-serif;
     margin-top: 1rem;
     /* font-weight: 600; */
-    width: 100%;
+    width: 99%;
     margin: 10px auto;
     display: flex;
     /* made it wrap else it will overflow in smaller screen, distorting the design */
@@ -36,10 +36,12 @@
   
   .logo {
     display: flex;
-    flex-basis: 10%;
+    flex-basis: 15%;
+    flex-shrink: 0;
   }
   
   .logo img {
+    /* flex-shrink: 0; */
     width: 90%;
   }
   
@@ -376,10 +378,11 @@
   }
   
   .back {
-    margin-top: 20px;
+    margin-top: 15px;
     background-color: #192d55;
     color: white;
     padding: 0.5rem 1rem;
+    font-family: 'cascadia-code', sans-serif;
     text-decoration: none;
     border-radius: 5px;
   }
@@ -395,6 +398,10 @@
       padding: unset;
       margin-bottom: 5px;
     }
+
+    /* .hero img{
+      width: 100%;
+    } */
   }
   /* MEDIA QUERIES FOR BLOG PAGE ENDS HERE */
   
