@@ -20,58 +20,90 @@ image{
 header{
     font-family: "Cascadia Code",Consolas,'Courier New',monospace;
 }
-nav{
-    display: flex;
-    margin: 1em 3em 0.5em 3em;
-    align-items: center;
-    font-size: 1.2rem;
+html{
+    scroll-behavior: smooth;
 }
-.nav-list{
+  
+  .navbar {
+    font-family: 'Cascadia Code', sans-serif;
+    /* margin-top: 0.8rem; */
+    /* font-weight: 600; */
+    width: 100%;
     margin: 0 auto;
-}
-.left{
-    margin-left: auto;
-    align-items: center;
-}
-ul{
-    list-style: none;
     display: flex;
-}
-a{
-    text-decoration: none;
-}
-a:hover{
-    text-decoration: underline;
-}
-.header-list{
-    margin-left: 2em;
-}
-.header-list-left{
-    margin-right: 1em;
-    margin-top: 0.3em;
-}
-.header-link{
-    color: rgba(85, 85, 85, 1);
-}
-.header-list:active{
-    color: rgba(25, 45, 85, 1);
-}
-.about{
-    border-bottom: 2px solid rgba(62, 113, 212, 1);
-}
-.header-btn{
-    background-color: rgba(25, 45, 85, 1);
-    color: #fff;
-    padding: 0.2em;
-    border: none;
-    border-radius: 1rem;
-    font-family: "Cascadia Code",Consolas,'Courier New',monospace;
+    /* made it wrap else it will overflow in smaller screen, distorting the design */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  
+  .logo {
+    display: flex;
+    /* width: 15%; */
+    flex-basis: 15%;
+    flex-shrink: 0;
+  }
+  
+  .logo img {
+    /* flex-shrink: 0; */
+    width: 90%;
+  }
+  
+  .list1 {
+    flex-basis: 50%;
+  }
+  
+  .list2 {
+    flex-basis: 23%;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+  }
+  
+  nav ul li a {
     font-size: 1.2rem;
-}
-.header-btn:hover{
-    opacity: 0.8;
-    transform: translateY(-3px);
-}
+    text-decoration: none;
+    color: #4a4a4a;
+  }
+  
+  .nav-items {
+    padding: 1rem 2.1rem;
+    margin-bottom: 5px;
+  }
+  
+  .blog {
+    border-bottom: 3px solid #192d55;
+  }
+  
+  hr {
+    background-color: #3e71d4;;
+  }
+  
+  .line {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 35px;
+    height: 3px;
+    outline: none;
+    /* margin-top: 5px; */
+    color: #192d55;
+  }
+  .nav-items2 {
+    padding: 0.5rem 1.5em;
+  }
+  
+  .signup {
+    color: #ffffff;
+    background-color: #192d55;
+    border-radius: 15px;
+  }
 .main-img-div{
     font-family: "Cascadia Code",Consolas,'Courier New',monospace;
     width: 100%;
