@@ -139,6 +139,7 @@ body{
     height: 70px;
     resize: horizontal;
     font-size: 3rem;
+    margin-left: 15px;
     border: none;
     outline: none;
    }
@@ -146,11 +147,11 @@ body{
    textarea{
     width: 85%;
     outline: none;
-    height: 59px;
+    height: 1000px;
     padding: 15px;
     margin-top: 20px;
     border-color: grey;
-    /* border: none; */
+    border: none;
     resize: none;
     /* margin: 5px 20px; */
    }
