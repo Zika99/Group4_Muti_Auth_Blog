@@ -5,3 +5,157 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+  
+  .navbar {
+    font-family: 'Cascadia Code', sans-serif;
+    margin-top: 1rem;
+    /* font-weight: 600; */
+    width: 99%;
+    margin: 10px auto;
+    display: flex;
+    /* made it wrap else it will overflow in smaller screen, distorting the design */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  
+  .logo {
+    display: flex;
+    flex-basis: 15%;
+    flex-shrink: 0;
+  }
+  
+  .logo img {
+    /* flex-shrink: 0; */
+    width: 90%;
+  }
+  
+  .list1 {
+    flex-basis: 50%;
+  }
+  
+  .list2 {
+    flex-basis: 23%;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+  }
+  
+  nav ul li a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #4a4a4a;
+  }
+  
+  .nav-items {
+    padding: 1rem 2.1rem;
+    margin-bottom: 5px;
+  }
+  
+  .blog {
+    border-bottom: 3px solid #192d55;
+  }
+  
+  hr {
+    background-color: #3e71d4;;
+  }
+  
+  .line {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 35px;
+    height: 3px;
+    outline: none;
+    /* margin-top: 5px; */
+    color: #192d55;
+  }
+  .nav-items2 {
+    padding: 0.5rem 1.5em;
+  }
+  
+  .signup {
+    color: #ffffff;
+    background-color: #192d55;
+    border-radius: 15px;
+  }
+
+  .container{
+    max-width: 1100px;
+    padding: 0 1rem 3rem;
+    margin: auto;
+    font-family: "Cascadia Code", sans-serif;
+  }
+
+  h1{
+    margin: 3rem 0;
+    font-weight: 400;
+    font-family: "Cascadia Code", sans-serif;
+  }
+
+  .accordion-header{
+    background-color: #ffffff;
+    cursor: pointer;
+    color: #1d1c1c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    transition: all o.4s ease-in-out;
+  }
+
+  .accordion-header h4{
+    word-spacing: 5px;
+    font-size: 1rem;
+    /* font-weight: 600; */
+  }
+
+  .accordion-body{
+    transition: all 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+
+  .accordion-body p{
+    padding: 1rem 1.5rem;
+    line-height: 1.8;
+  }
+
+  .accordion{
+    padding: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px #9e9a9a;
+  }
+
+  .accordion + .accordion{
+    margin-top: 1rem;
+    
+  }
+
+  .accordion-icon{
+    transition:  transform 0.3s ease-in-out;
+    width: 2%;
+  }
+
+  .accordion.active
+  .accordion-header{
+    background-color: #ffffff;
+    /* color: #ffffff; */
+  }
+
+  .accordion.active
+  .accordion-icon{
+    transform: rotate(-180deg);
+  }
+  

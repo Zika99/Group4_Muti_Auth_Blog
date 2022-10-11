@@ -101,7 +101,7 @@ body{
 
    .logo{
     /* width: 90%; */
-    /* margin-left: -90%; */
+    margin-left: -9%;
    }
 
    .preview{
@@ -139,7 +139,7 @@ body{
     height: 70px;
     resize: horizontal;
     font-size: 3rem;
-    margin-left: 15px;
+    margin-left: 20px;
     border: none;
     outline: none;
    }
@@ -149,7 +149,7 @@ body{
     outline: none;
     height: 1000px;
     padding: 15px;
-    margin-top: 20px;
+    margin: 20px 15px;
     border-color: grey;
     border: none;
     resize: none;
