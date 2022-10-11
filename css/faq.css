@@ -99,7 +99,7 @@ html{
 
   h1{
     margin: 3rem 0;
-    font-weight: 400;
+    font-weight: 800;
     font-family: "Cascadia Code", sans-serif;
   }
 
@@ -116,8 +116,8 @@ html{
 
   .accordion-header h4{
     word-spacing: 5px;
-    font-size: 1rem;
-    /* font-weight: 600; */
+    font-size: 1.3rem;
+    font-weight: 600;
   }
 
   .accordion-body{
@@ -126,6 +126,80 @@ html{
     overflow: hidden;
     background-color: #ffffff;
   }
+
+  footer {
+    background-color: #315aa9;
+  }
+  
+  .footer {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* background-color: #315AA9; */
+    height: 270px;
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    position: relative;
+    margin-top: 100px;
+    padding: 3rem 1rem 2rem 1rem;
+  }
+  
+  .hh {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+  }
+  
+  .sp {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .log {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .socials a {
+    text-decoration: none;
+  }
+  
+  .explore ul {
+    list-style-type: none;
+    padding: 0.5rem 0;
+    cursor: pointer;
+  }
+  
+  .explore ul li {
+    padding: 0.3rem 0;
+    cursor: pointer;
+  }
+  
+  .explore ul li a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .message input {
+    width: 63%;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .message button {
+    margin-left: -10px;
+    padding: 0.5rem 1rem;
+    border: 0;
+    outline: 0;
+    color: white;
+    border-radius: 10px;
+    background-color: #192d55;
+  }
+
 
   .accordion-body p{
     padding: 1rem 1.5rem;
