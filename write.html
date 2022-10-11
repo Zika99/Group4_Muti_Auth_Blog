@@ -27,7 +27,7 @@
             <hr style="margin: 30px 0;">
 
             <ul>
-                <li><a class="link" href="#" title="delete"><img src="./img for write/fluent_delete-28-regular.svg" alt=""></a></li>
+                <li><button class="link" id="delete" href="#" title="delete"><img src="./img for write/fluent_delete-28-regular.svg" alt=""></button></li>
             </ul>
 
            
@@ -66,7 +66,17 @@
     </div>
 
     <script>
-        const textarea = document.querySelector('textarea');
+        let btnClear = document.querySelector('button');
+        let inputs = document.querySelectorAll('input');
+        let input = document.querySelectorAll('textarea');
+
+        btnClear.addEventListener('click', () => {
+            inputs.forEach(input => input.value = '');
+        });
+
+        btnClear.addEventListener('click', () => {
+            input.forEach(textarea => textarea.value = '');
+        });
     </script>
 </body>
 </html>
