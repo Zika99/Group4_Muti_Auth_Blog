@@ -94,19 +94,40 @@ hr {
 
 /* Css for header */
 header {
+  width:100%;
+  display: block;
   /* background-image: url("/land\ imgs/true-wave-group.svg"); */
   /* width: 100%;
   position: relative; */
 }
-.true-wave {
-  width: 100%;
-  position: relative;
+
+.header-box{
+    width: 99%;
+    height: 600px;
+    margin: 0 auto;
+    background-color: #3e71d4;
 }
+
+.wave{
+  width: 50%;
+}
+
+.header-cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.true-content{
+  margin-top: -220px;
+  margin-left: -150px;
+}
+
 .true-h1 {
-  /* font-weight: 600;
-  font-size: 64px; */
-  width: 40%;
-  line-height: 50px;
+  font-weight: 600;
+  font-size: 45px;
+  width: 70%;
+  /* line-height: 50px; */
   color: #ffffff;
 }
 .true-p {
@@ -115,14 +136,14 @@ header {
   font-size: 24px;
   width: 70%;
   line-height: 29px;
-  padding-top: 10px;
+  /* padding-top: 10px; */
   font-family: "Cascadia Code", sans-serif;
 }
 .true-content {
-  position: absolute;
+  /* position: absolute; */
   /* width: 100%; */
-  bottom: -15px;
-  right: 330px;
+  /* bottom: -15px; */
+  /* right: 330px; */
 }
 .write-btn{
     padding: 9px 60px;
