@@ -20,10 +20,6 @@
         <div class="container">
             <h3 style="text-align: center; padding-top:90px;">Tools</h3>
             <ul>
-            <li><a class="link" href="#" title="Align-right"><img src="./img for write/ant-design_align-right-outlined.svg" alt=""></a></li>
-            <li><a class="link" href="#" title="Align-center"><img src="./img for write/cil_align-center.svg" alt=""></a></li>
-            <li><a class="link" href="#" title="Align-left"><img src="./img for write/ant-design_align-left-outlined.svg" alt=""></a></li>
-            <li><a class="link" href="#" title="Bold"><img src="./img for write/bi_type-bold.svg" alt=""></a></li>
             <li><a class="link" href="#" title="Italics"><img src="./img for write/bx_italic.svg" alt=""></a></li>
             <li><a class="link" href="#" title="Add image"><img src="./img for write/akar-icons_image.svg" alt=""></a></li>
             </ul>
@@ -31,7 +27,7 @@
             <hr style="margin: 30px 0;">
 
             <ul>
-                <li><a class="link" href="#" title="delete"><img src="./img for write/fluent_delete-28-regular.svg" alt=""></a></li>
+                <li><button class="link" id="delete" href="#" title="delete"><img src="./img for write/fluent_delete-28-regular.svg" alt=""></button></li>
             </ul>
 
            
@@ -47,15 +43,11 @@
            <div class="section-two">
             <header>
                 <div class="top">
-                    <div class="logo-div"><img class="logo" src="./img for preview/brainwave logo 2.svg" alt=""></div>
+                    <div class="logo-div"><img class="logo" src="./img for blog page/brainwave logo 2.svg" alt=""></div>
                     <div class="right">
                         <div class="options">
                             <button href="#" class="preview">Publish</button>
                             <button href="#" class="publish" disabled>Publish</button>
-                        </div>
-                        <div class="note">
-                            <img src="./img for preview/Vector1.svg" alt="">
-                            <span class="rounded-A">A</span>
                         </div>
                     </div>
                 </div>
@@ -70,7 +62,17 @@
     </div>
 
     <script>
-        const textarea = document.querySelector('textarea');
+        let btnClear = document.querySelector('button');
+        let inputs = document.querySelectorAll('input');
+        let input = document.querySelectorAll('textarea');
+
+        btnClear.addEventListener('click', () => {
+            inputs.forEach(input => input.value = '');
+        });
+
+        btnClear.addEventListener('click', () => {
+            input.forEach(textarea => textarea.value = '');
+        });
     </script>
 </body>
 </html>
