@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("http://fonts.cdnfonts.com/css/cascadia-code");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background: #F5F5F5;
+
+  /* margin: 0 auto;
+    justify-content: center; */
+}
+.body-cont {
+  margin: 50px;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Cascadia Code", sans-serif;
+}
+p {
+  font-family: "Open Sans", sans-serif;
+}
+/* CSS for Theme mode */
+label {
+  position: absolute;
+  width: 45px;
+  height: 27px;
+  right: 20px;
+  top: 20px;
+  border: 2px solid;
+  border-radius: 20px;
+}
+label:before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  left: 1px;
+  top: 1px;
+  border-radius: 50%;
+  background: #000;
+  cursor: pointer;
+  transition: 0.4s;
+}
+label.active:before {
+  left: 24px;
+  background: #fff;
+}
+body.night {
+  background: #000;
+  color: #fff;
+}
+/* End of css for theme mode */
+
+.wraper {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+}
+
+.side-bar-wraper {
+  height: 100vh;
+  position: fixed;
+  width: 10%;
+  box-shadow: 1px 1px 9px 5px rgba(0, 0, 0, 0.1);
+  background: #FFFFFF;
+}
+.menu-bar{
+  display: flex;
+}
+.height-set {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+}
+
+.items-wraper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.items-border-bottom {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0;
+  gap: 12px;
+  width: fit-content;
+  border-bottom: 2px solid #000000;
+}
+
+.sidebar-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-footer img {
+  width: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.a-full {
+  color: #ffffff;
+  background: #3e71d4;
+  width: 25px;
+  height: 27px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* End of Css for sidebar */
+
+/* Start of css for body */
+.maaain {
+  display: flex;
+}
+.start {
+  display: flex;
+  flex-direction: column;
+}
+.right-nav {
+  display: flex;
+  justify-content: space-between;
+  /* width: 70%;
+  position: sticky;
+  top: 0; */
+}
+.auth-main {
+  display: flex;
+}
+
+.strt-btn {
+width: 40%;;
+ background: #192D55;
+border-radius: 18.9467px;
+  padding: 20px 37.8296px;
+  font-family: "Cascadia Code", sans-serif;
+ 
+}
+.strt-btn-p {
+  color: #ffffff;
+  font-family: "Cascadia Code", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.fashion {
+  font-family: "Cascadia Code", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #686868;
+}
+
+.saved {
+  color: #555555;
+  opacity: 0.2;
+}
+.ur {
+  color: #555555;
+}
+.fash{
+  font-family: 'Cascadia Code';
+font-weight: 700;
+font-size: 12.9945px;
+color: #4A4A4A;
+
+
+}
+.fashion{
+  border: 3px solid  #3e71d4;
+
+}
+.fash-content h2 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #3e71d4;
+}
+
+.fash-content p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #555555;
+}

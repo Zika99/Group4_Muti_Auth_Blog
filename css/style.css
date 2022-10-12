@@ -238,7 +238,7 @@ height: 39px;
 }
 .trend-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding-top: 15px;
   /* padding-left: 10px; */
 }
@@ -247,7 +247,7 @@ height: 39px;
 }
 .p1-trend {
   width: 100%;
-  padding-top: 20px;
+  padding-top: 45px;
   font-size: 14.71px;
   line-height: 18.39px;
   color: #555555;
@@ -273,22 +273,22 @@ height: 39px;
 .dest2,
 .dest3 {
   font-family: "Cascadia Code";
-  font-weight: 600;
+  font-weight: 500;
   font-size: 24px;
   line-height: 28px;
   color: #3e71d4;
 }
 .dest {
   padding-top: 10px;
-  width: 90%;
+  width: 100%;
 }
-.dest2 {
+/* .dest2 {
   padding-top: 10px;
-  width: 80%;
+  width: 100%;
 }
 .dest3 {
   padding-top: 10px;
-}
+} */
 .auth-cont {
   display: flex;
   padding-top: 70px;
@@ -666,3 +666,112 @@ footer {
   text-decoration: none;
   border-radius: 5px;
 }
+
+
+
+/* Media Query for Latest Section */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  body{
+    width: fit-content;
+  }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .latest-nav{
+    display: flex;
+    flex-direction: column;
+  }
+  .right-late{
+    ;
+  }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  .latest-nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .right-late{
+    width: auto;
+  }
+  .auth-main{
+    width: 100%;
+  }
+.left-late{
+  width: 40%;
+  /* max-width: fit-content; */
+}
+.latest-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.late-h1{
+  
+}
+.tech{
+  width: 100%;
+}
+
+
+
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  
+  .latest-nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .right-late{
+    display: none;
+  }
+  .auth-main{
+    width: 100%;
+  }
+.left-late{
+  width: 100%;
+  /* max-width: fit-content; */
+}
+.latest-container{
+  width: 100%;
+}
+.late-h1{
+  
+}
+
+
+
+  
+}
+
+
+
+@media (max-width:600px)
+768px
