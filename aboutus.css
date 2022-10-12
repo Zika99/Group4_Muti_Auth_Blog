@@ -72,6 +72,9 @@ a:hover{
     opacity: 0.8;
     transform: translateY(-3px);
 }
+.fa-bars{
+    display: none;
+}
 .main-img-div{
     font-family: "Cascadia Code",Consolas,'Courier New',monospace;
     width: 100%;
@@ -97,15 +100,13 @@ a:hover{
     color: #fff;
     font-size: 2.5rem;
 }
-.main-text{
-    font-family: "Open Sans", sans-serif;
-}
 h1{
     color:#3e71d4;
     margin-bottom: 0.5em;
     font-weight: 800;
 }
 .main-text{
+    font-family: "Open Sans", sans-serif;
     width: 65%;
     margin: 3em auto;
     line-height: 1.7em;
@@ -156,6 +157,7 @@ input{
     border: none;
     border-radius: 0.5rem;
     font-family: "Cascadia Code",Consolas,'Courier New',monospace;
+    position: relative;
 }
 input:placeholder-shown{
     color: rgba(170, 170, 170, 1);
@@ -195,4 +197,110 @@ input:placeholder-shown{
     .footer-btn{
         right: 1em;
     }
+}
+@media (max-width:700px){
+    nav{
+        /* padding: 1em; */
+        margin: 1.5em 1em 0.5em 1em;
+      }
+       .nav-list {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #315aa9;
+        z-index: 3;
+        width: 0%;
+        height: 100%;
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.3s ease;
+      }  
+      .nav-list.active{
+        opacity: 1;
+        pointer-events: all;
+        width: 100%;
+      }
+      .header-ul{
+        flex-direction: column;
+        place-content: center;
+        place-items: center;
+        color: #000;
+      }
+      .fa-bars {
+        display: block;
+        position: relative;
+        z-index: 5;
+        font-size: 1.3rem;
+      }
+      li{
+        margin-bottom: 1.5em;
+      }
+      .logo-div-header{
+        width: 30%;
+        margin-left: 1em;
+      }
+      .logo-div{
+        width: 100%;
+      }
+      .main-text{
+        width: 90%;
+      }
+      .main-text p{
+        font-size: 0.9rem;
+      }
+    .main-img-p{
+    position: absolute;
+    top: 13%;
+    left: 25%;
+    color: #fff;
+    font-size: 2.5rem;
+}
+h1{
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2em 1em;
+}
+.logo-div-footer{
+    margin-bottom: 1em;
+    width: 70%;
+}
+.footer-logo{
+    width: 100%;
+}
+.footer-list{
+    margin-left: auto;
+}
+.subscribe{
+    grid-column: 1/-1;
+    grid-row: 2/3;
+}
+input{
+    /* padding: 1em 4em; */
+    width: 100%;
+    display: inline-block;
+}
+    .footer-btn{
+        right: 5em;
+        width: 40%;
+    }
+    .div-footer-one{
+        margin-bottom: 0;
+    }
+/* footer{
+    display: block;
+    text-align: center;
+    padding: 4em 1em;
+}
+input{
+    display: block;
+    margin: 0 auto;
+}
+.footer-btn{
+    width: 50%;
+    margin-top: 1em;
+} */
 }
