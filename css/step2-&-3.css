@@ -313,7 +313,7 @@ margin-bottom: 50px;
 .steps-header{
   width: 100%;
   /* height: 58px; */
-  border-bottom: 10px solid #4a87fe;
+  border-bottom: 13px solid #4a87fe;
   padding-top: 30px;
   /* padding-bottom: 5px; */
   /* display: flex;
@@ -325,6 +325,7 @@ margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
   /* border: 5px solid indigo; */
+  padding-bottom: 15px;
   margin: auto;
   width: 85%;
 }
