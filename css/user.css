@@ -296,3 +296,27 @@ aside {
 .tag p {
     color: #FFFFFF;
 }
+
+@media screen and (max-width: 400px) and (min-width: 200px) {
+    body, header {
+        display: block;
+    }
+
+    header {
+        width: 100%;
+        margin-left: 0;
+        font-size: 15px;
+    }
+
+    aside, nav {
+        display: none;
+    }
+
+    .all-posts {
+        grid-template-columns: repeat(2, minmax(5rem, 13rem));
+    }
+
+    main {
+        margin-left: 0;
+    }
+}

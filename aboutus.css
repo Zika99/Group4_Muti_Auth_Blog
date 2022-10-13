@@ -293,6 +293,11 @@ input:placeholder-shown {
     padding: 2em 1em;
   }
   .logo-div-footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    color: #fff;
+    padding: 3em 1em;
+    font-family: "Cascadia Code",Consolas,'Courier New',monospace;
+    min-height: 40vh;
     margin-bottom: 1em;
     width: 70%;
   }
