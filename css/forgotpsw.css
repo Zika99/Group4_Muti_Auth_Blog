@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("http://fonts.cdnfonts.com/css/cascadia-code");
+
+   
+:root {
+	--red: #ff0d0d;
+	--blue: #315aa9;
+	--green: #04aa47;
+	--white: #ffffff;
+	--bright-blue: #3e71d4;
+	--light-blue: #dbe7ff;
+	--dark-blue: #25447f;
+	--black-shadow: rgba(0, 0, 0, 0.3);
+	--blue-shadow: rgba(0, 0, 255, 0.3);
+	--transition: all 0.2s ease-in-out;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body {
+	font-size: 1rem;
+	min-height: 100vh;
+	background-color: #f5f5f5;
+	font-family: "Cascadia Code", sans-serif;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main {
+	position: relative;
+	padding: 5rem 1rem 1rem;
+	text-align: center;
+	max-width: 768px;
+	margin: auto;
+}
+
+.wave-bg-img {
+	position: absolute;
+	top: 1%;
+	left: 0;
+	max-width: 78%;
+}
+
+.wave-bg-img img {
+	width: 100%;
+}
+
+.container {
+	text-align: center;
+	max-width: 500px;
+	margin: auto;
+	flex-grow: 1;
+    /* padding-top: -200px; */
+   
+}
+
+.container h1 {
+	color: var(--blue);
+}
+.forgot-p{
+    padding-top: 20px;
+}
+.option-text {
+	font-size: 1.1rem;
+	color: var(--blue);
+	margin-bottom: 2rem;
+}
+
+form .input-field {
+	margin-bottom: 2rem;
+	background-color: transparent;
+	padding: 0.8rem;
+	border-radius: 0.8rem;
+	border: 1px solid var(--bright-blue);
+	box-shadow: 0 1px 3px var(--black-shadow);
+}
+
+form .input-field input:focus {
+	outline: none;
+}
+
+form .input-field:focus-within {
+	box-shadow: 0 1px 8px var(--blue-shadow);
+}
+
+form .input-field.filled {
+	background-color: var(--light-blue);
+	border: none;
+}
+
+form .input-field.filled:focus-within {
+	box-shadow: 0 1px 8px var(--blue-shadow);
+}
+
+form .input-field span {
+	display: flex;
+	align-items: center;
+}
+
+form .input-field span img {
+	width: 60%;
+}
+
+form .input-field input {
+	flex: 1;
+	font-size: 1rem;
+	border: none;
+	background-color: transparent;
+	font-family: "Cascadia Code", sans-serif;
+}
+
+form .submit-btn {
+	display: flex;
+	gap: 1rem;
+	font-size: 1rem;
+	width: 100%;
+	border: none;
+	border-radius: 0.8rem;
+	color: var(--white);
+	background-color: var(--blue);
+	padding: 0.6rem;
+	transition: var(--transition);
+	cursor: pointer;
+	font-family: "Cascadia Code", sans-serif;
+}
+
+form .submit-btn:hover {
+	background-color: var(--bright-blue);
+}
+
+form .submit-btn:active {
+	background-color: var(--dark-blue);
+}
+
+form .submit-btn span {
+	display: flex;
+	align-items: center;
+}
+
+form .submit-btn span img {
+	width: 50%;
+}
+
+.forgot-password {
+	display: block;
+	color: var(--red);
+	margin-bottom: 3rem;
+	font-size: 0.875rem;
+}
+
+.agree-checkbox {
+	color: var(--green);
+	margin-bottom: 3rem;
+	font-size: 0.875rem;
+	text-align: left;
+}
+
+.copy {
+	margin-top: 5rem;
+	font-size: 0.75rem;
+}
