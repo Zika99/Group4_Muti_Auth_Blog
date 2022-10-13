@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('http://fonts.cdnfonts.com/css/cascadia-code');
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Cascadia Code",Consolas,'Courier New',monospace;
+    transition: background 0.2s linear;
+  }
+.container{
+    display: flex;
+}
+img{
+    max-width: 100%;
+}
+#head{
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 4px 0 10px 5px rgba(0, 0, 0, 0.1);
+    width: 10%;
+    min-height: 100vh;
+}
+nav{
+    width: 80%;
+    margin: 2em auto;
+}
+.logo-div{
+    display: flex;
+}
+.hamburger-div{
+    width: 18%;
+    margin-right: 1em;
+}
+.hamburger{
+    width: 100%;
+}
+.logo{
+    width: 82%;
+}
+.actual-logo{
+    width: 100%;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin-top: 9em;
+}
+.icon-div{
+    margin-bottom: 2em;
+    opacity: 0.4;
+}
+.search{
+    display: none;
+}
+.write-icon{
+    opacity: 1;
+}
+.icon-div:hover{
+    cursor: pointer;
+}
+.fa-regular{
+    color: #000;
+    font-size: 2rem;
+    opacity: 0.7;
+}
+.name-logo{
+    margin-top: 8em;
+    background-color: #3E71D4;
+    color: #fff;
+    padding: 0.7em;
+    border-radius: 50%;
+   margin-bottom: 0;
+   opacity: 1;
+}
+.name-logo:hover{
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.3s ease-in-out;
+}
+.empty p{
+    display: none;
+    margin-top: 0;
+}
+.curved{
+    position: absolute;
+    opacity: 0.3;
+}
+main{
+    width: 100%;
+}
+.nav-top{
+    width: 100%;
+    border-bottom: 1px solid rgba(170, 170, 170, 1);
+}
+ul{
+    list-style: none;
+    display: flex;
+    margin: 0 3em;
+}
+li{
+    display: block;
+    margin-right: 2em;
+    color: #555555;
+    opacity: 0.5;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.current-page{
+    border-bottom: 2px solid #4A87FE;
+    color: #555555;
+    opacity: 1;
+}
+.main-header{
+    background-image: url(images/wave.svg);
+    background-color: rgba(49, 90, 169, 1);
+    padding: 1em 3em;
+    display: flex;
+}
+h1{
+    color: #fff;
+    margin-bottom: 1em;
+}
+button{
+    background-color: #192D55;
+    color: #fff;
+    padding: 0.7rem 2em;
+    border: none;
+    border-radius: 1rem;
+    font-family: "Cascadia Code",Consolas,'Courier New',monospace;
+    font-size: 1.5rem;
+}
+button:hover{
+    transform: translateY(5px);
+}
+.diagonal-lines{
+    width: 1.5%;
+    position: absolute;
+    top: 13.5%;
+    left: 11.5%;
+}
+.main-header-img-div{
+    margin-top: 2em;
+    margin-left: auto;
+    width: 10%;
+}
+.main-header-img{
+    width: 100%;
+}
+h1{
+    position: relative;
+}
+.text{
+    color: rgba(217, 217, 217, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-weight: 600;
+    font-size: 1.5rem;
+    opacity: 0.4;
+}
+
+@media (min-width:750px) and (max-width: 1000px){
+    #head{
+        width: 15%;
+    }
+    .hamburger-div{
+        width: 25%;
+        margin-right: 1em;
+    }
+    .hamburger{
+        width: 100%;
+    }
+    .logo{
+        width: 100%;
+    }
+    .actual-logo{
+        width: 100%;
+    }
+    .diagonal-lines{
+        top: 15%;
+        left: 17%;
+    }
+    .main-header-img-div{
+        width: 15%;
+    }
+}
+
+@media (max-width:750px){
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #head{
+        width: 100%;
+        min-height: unset;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        box-shadow: none;
+    }
+    .nav-side{
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        min-height: 5vh;
+    }
+    .logo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20%;
+        margin: 1em;
+    }
+    .icons{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        place-items: center;
+        place-content: center;
+        min-height: unset;
+        margin-top: unset;
+        margin-bottom: 0;
+    }
+    .icon-div{
+        margin-top: 1em;
+        margin-right: 2.5em;
+        margin-bottom: 0;
+    }
+    .name-logo{
+        margin-top: 1.5em;
+        padding: 0.3em;
+        margin-left: 0;
+        order: 4;
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }
+    .search{
+        display: block;
+    }
+    .hamburger, .notify, .book-icon, .line-icon, .pen-icon, .empty{
+        display: none;
+        width: 0;
+    }
+    ul{
+        margin: 4em 1.5em 0 1.5em;
+    }
+    li{
+        font-size: 1.5rem;
+    }
+    .other-page{
+        margin-left: auto;
+    }
+    main{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .main-header{
+        padding: 1.5em 1em 0.5em 1em;
+        border-radius: 0.3rem;
+    }
+    h1{
+        font-size: 0.9rem;
+    }
+    button{
+        padding: 0.4em 0.5em;
+        font-size: 1rem;
+        border-radius: 0.65rem;
+    }
+    .main-header-img-div{
+        width: 15%;
+        margin-top: 0.5em;
+    }
+    .diagonal-lines{
+        width: 4%;
+        top:23%;
+        left: 3%;
+    }
+}
