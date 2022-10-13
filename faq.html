@@ -156,16 +156,20 @@
                 </div>
               </div>
             </div>
-            <div class="explore">
-              <h2>Explorate</h2>
-              <ul>
-                <li>
-                  <a href="./aboutus.html">About</a>
-                </li>
-                <li><a href="">Contact Us</a></li>
-                <li><a href="">Membership</a></li>
-              </ul>
-            </div>
+           <div class="exp">
+            <ul class="explore-ul">
+              <li class="footer-li"><b>Explore</b></li>
+              <li class="footer-li">
+                <a href="#" class="footer-link">About Us</a>
+              </li>
+              <li class="footer-li">
+                <a href="#" class="footer-link">Contact Us</a>
+              </li>
+              <li class="footer-li">
+                <a href="#" class="footer-link">Membership</a>
+              </li>
+            </ul>
+           </div>
   
             <div class="message">
               <input type="text" placeholder="Email" />
@@ -178,13 +182,13 @@
       <script>
         const accordionHeaders = document.querySelectorAll('.accordion-header');
 
-        ActivatingFirstAccordion();
+//         ActivatingFirstAccordion();
 
-        function ActivatingFirstAccordion() {
-            accordionHeaders[0].parentElement.classList.add("active");
-  accordionHeaders[0].nextElementSibling.style.maxHeight =
-  accordionHeaders[0].nextElementSibling.scrollHeight + "px";
-}
+//         function ActivatingFirstAccordion() {
+//             accordionHeaders[0].parentElement.classList.add("active");
+//   accordionHeaders[0].nextElementSibling.style.maxHeight =
+//   accordionHeaders[0].nextElementSibling.scrollHeight + "px";
+// }
 
 function toggleActiveAccordion(e, header) {
   const activeAccordion = document.querySelector(".accordion.active");
