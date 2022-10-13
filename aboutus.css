@@ -173,9 +173,11 @@ h4{
     display: block;
 }
 .footer-li{
+    list-style-type: none;
     margin-bottom: 1em;
 }
 .footer-link{
+    text-decoration: none;
     color: #fff;
     margin-bottom: 1em;
 }

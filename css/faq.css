@@ -99,6 +99,7 @@ html{
 
   h1{
     margin: 3rem 0;
+    color: #315aa9;
     font-weight: 800;
     font-family: "Cascadia Code", sans-serif;
   }
@@ -168,18 +169,18 @@ html{
   .explore ul {
     list-style-type: none;
     padding: 0.5rem 0;
-    cursor: pointer;
+    /* cursor: pointer; */
   }
   
   .explore ul li {
     padding: 0.3rem 0;
-    cursor: pointer;
+    /* cursor: pointer; */
   }
   
   .explore ul li a {
-    text-decoration: none;
+    /* text-decoration: none; */
     color: #fff;
-    cursor: pointer;
+    /* cursor: pointer; */
   }
   
   .message input {
