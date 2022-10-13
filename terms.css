@@ -54,7 +54,7 @@ html{
 .navbar div {
   height: 0.25rem;
   background: rgba(255, 255, 255, 1);
-  margin: 0.4em 20em 0.4em 0;
+  margin: 0.2em;
   border-radius: 1.6rem;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -72,15 +72,13 @@ html{
   width: 4rem;
 }
 h2 {
-  text-align: center;
   margin: 0 auto;
-  align-self: center;
 }
 .terms-text {
   padding: 4em;
 }
 p {
-  color: #a4a4a4;
+  color: #495057;
   margin-bottom: 1em;
   line-height: 1.9em;
   font-family: "Open Sans", sans-serif;
@@ -115,4 +113,51 @@ p {
 }
 a{
   color: black;
+}
+
+@media (max-width: 750px){
+  .terms-head{
+    padding: 0 0 0 0.5em;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  .navbar {
+    width: 1.5rem;
+    display: block;
+    margin-right: auto;
+  }
+  .navbar div {
+    height: 0.1rem;
+    background: rgba(255, 255, 255, 1);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+  .one {
+    width: 1.5rem;
+  }
+  .two {
+    width: 1rem;
+  }
+  .three {
+    width: 0.7rem;
+  }
+  .navbar:hover div {
+    width: 1.5rem;
+  }
+  .terms-text{
+    font-size: 0.9rem;
+    padding: 1em;
+  }
+  .terms-choice{
+    padding: 1em;
+    text-align: right;
+  }
+  .decline{
+    font-size: 0.7rem;
+  }
+  .agree{
+    padding: 1em 2em;
+    font-size: 0.7rem;
+  }
 }

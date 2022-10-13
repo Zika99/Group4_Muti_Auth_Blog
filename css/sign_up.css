@@ -9,14 +9,28 @@
 
 /* header  */
 #header-1{
-    margin-left: 500px;
+    margin-left: 450px;
     margin-top: 20px;
     height: 80px;
+    opacity: 0.1;
 }
 #header-2{
-    margin-left: 20px;
+    margin-left: 120px;
     width: 50%;
+    position: relative;
+    top: -40px;
+    opacity: 0.1;
 }
+
+#header-3{
+    margin-left: 120px;
+    width: 35%;
+    position: relative;
+    top: -60px;
+    opacity: 0.1;
+}
+
+/* body  */
 
 h1{
     text-align: center;
@@ -25,8 +39,7 @@ h1{
     font-family: 'Cascadia Code';
     font-style: normal;
     font-weight: 400;
-    font-size: 44px;
-    margin-top: 60px;
+    font-size: 34px;
 }
 
 .social-media{

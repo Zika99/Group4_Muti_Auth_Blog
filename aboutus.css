@@ -1,198 +1,337 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('http://fonts.cdnfonts.com/css/cascadia-code');
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
-*, ::before, ::after{
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("http://fonts.cdnfonts.com/css/cascadia-code");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
 }
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
-    background-color: #f5f5f5;
+body {
+  background-color: #f5f5f5;
 }
-image{
-    max-width: 100%;
+image {
+  max-width: 100%;
 }
-header{
-    font-family: "Cascadia Code",Consolas,'Courier New',monospace;
+header {
+  font-family: "Cascadia Code", Consolas, "Courier New", monospace;
 }
-nav{
-    display: flex;
-    margin: 1em 3em 0.5em 3em;
-    align-items: center;
-    font-size: 1.2rem;
+nav {
+  display: flex;
+  margin: 1em 3em 0.5em 3em;
+  align-items: center;
+  font-size: 1.2rem;
 }
-.nav-list{
-    margin: 0 auto;
+.nav-list {
+  width: 100%;
 }
-.left{
-    margin-left: auto;
-    align-items: center;
+.nav-list-div {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
-ul{
-    list-style: none;
-    display: flex;
+.header-ul {
+  margin: 0 auto;
 }
-a{
-    text-decoration: none;
+.left {
+  margin-left: auto;
+  align-items: center;
 }
-a:hover{
-    text-decoration: underline;
+ul {
+  list-style: none;
+  display: flex;
 }
-.header-list{
-    margin-left: 2em;
+a {
+  text-decoration: none;
 }
-.header-list-left{
+a:hover {
+  text-decoration: underline;
+}
+.header-list {
+  margin-left: 2em;
+}
+.header-list-left {
+  margin-right: 1em;
+  margin-top: 0.3em;
+}
+.header-link {
+  color: rgba(85, 85, 85, 1);
+}
+.header-list:active {
+  color: rgba(25, 45, 85, 1);
+}
+.about {
+  border-bottom: 2px solid rgba(62, 113, 212, 1);
+}
+.header-btn {
+  background-color: rgba(25, 45, 85, 1);
+  color: #fff;
+  padding: 0.2em;
+  border: none;
+  border-radius: 1rem;
+  font-family: "Cascadia Code", Consolas, "Courier New", monospace;
+  font-size: 1.2rem;
+}
+.header-btn:hover {
+  opacity: 0.8;
+  transform: translateY(-3px);
+}
+.fa-bars {
+  display: none !important;
+}
+.main-img-div {
+  font-family: "Cascadia Code", Consolas, "Courier New", monospace;
+  width: 100%;
+}
+.img-div {
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+.main-img {
+  width: 100%;
+  height: 100%;
+}
+.overlay {
+  background-color: rgba(25, 45, 85, 50%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.main-img-p {
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  color: #fff;
+  font-size: 2.5rem;
+}
+h1 {
+  color: #3e71d4;
+  margin-bottom: 0.5em;
+  font-weight: 800;
+}
+.main-text {
+  font-family: "Open Sans", sans-serif;
+  width: 65%;
+  margin: 3em auto;
+  line-height: 1.7em;
+}
+footer {
+  background-image: url(images/wave.png);
+  background-repeat: no-repeat;
+  background-color: #315aa9;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: #fff;
+  padding: 3em 1em;
+  font-family: "Cascadia Code", Consolas, "Courier New", monospace;
+  min-height: 40vh;
+}
+.logo-div-footer {
+  margin-bottom: 1em;
+}
+h4 {
+  margin-bottom: 1em;
+}
+.social {
+  font-family: "Lora", sans-serif;
+  font-weight: 700;
+}
+.fa-brands {
+  margin-right: 1em;
+}
+.fa-brands:hover {
+  color: rgba(170, 170, 170, 1);
+}
+.footer-ul {
+  display: block;
+}
+.footer-li {
+  margin-bottom: 1em;
+}
+.footer-link {
+  color: #fff;
+  margin-bottom: 1em;
+}
+.footer-link:active {
+  color: rgba(85, 85, 85, 1);
+}
+input {
+  width: 80%;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 0.5rem;
+  font-family: "Cascadia Code", Consolas, "Courier New", monospace;
+  position: relative;
+}
+input:placeholder-shown {
+  color: rgba(170, 170, 170, 1);
+  letter-spacing: 1.1px;
+}
+.footer-btn {
+  position: absolute;
+  right: 7em;
+  background-color: #000;
+  color: #fff;
+  padding: 1em;
+  border: none;
+  border-radius: 1rem;
+  width: 10%;
+  font-family: "Cascadia Code", Consolas, "Courier New", monospace;
+}
+.footer-btn:hover,
+.footer-btn:active {
+  transform: translateX(3px);
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .footer-btn {
+        right: 3em;
+        width: 10%;
+      }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+  nav {
+    font-size: 1rem;
+  }
+  .logo-div {
+    width: 80%;
+  }
+  .header-btn {
+    font-size: 1rem;
+  }
+  .left {
     margin-right: 1em;
-    margin-top: 0.3em;
+  }
+  .main-img-p {
+    top: 20%;
+  }
+  .footer-btn {
+    right: 1em;
+  }
 }
-.header-link{
-    color: rgba(85, 85, 85, 1);
-}
-.header-list:active{
-    color: rgba(25, 45, 85, 1);
-}
-.about{
-    border-bottom: 2px solid rgba(62, 113, 212, 1);
-}
-.header-btn{
-    background-color: rgba(25, 45, 85, 1);
-    color: #fff;
-    padding: 0.2em;
-    border: none;
-    border-radius: 1rem;
-    font-family: "Cascadia Code",Consolas,'Courier New',monospace;
-    font-size: 1.2rem;
-}
-.header-btn:hover{
-    opacity: 0.8;
-    transform: translateY(-3px);
-}
-.main-img-div{
-    font-family: "Cascadia Code",Consolas,'Courier New',monospace;
-    width: 100%;
-}
-.img-div{
-    width: 100%;
-}
-.main-img{
-    width: 100%;
-    position: relative;
-}
-.overlay{
-    background-color: rgba(1, 54, 134, 0.4);
-    position: absolute;
-    width: 100%;
+@media (max-width: 700px) {
+  nav {
+    margin: 1.5em 1em 0.5em 1em;
+  }
+  .nav-list {
+    position: fixed;
     top: 0;
-    left: 0;
-}
-.main-img-p{
+    right: 0;
+    background-color: #315aa9;
+    z-index: 3;
+    width: 0%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+  }
+  .nav-list.active {
+    opacity: 1;
+    pointer-events: all;
+    width: 100%;
+  }
+  .nav-list-div {
+    display: flex;
+    flex-direction: column;
+    margin: 7em auto;
+  }
+  .header-ul {
+    display: block;
+    color: #000;
+    margin: unset;
+  }
+  .left {
+    margin-left: 1.5em;
+  }
+  .fa-bars {
+    display: block !important;
+    position: relative;
+    z-index: 5;
+    font-size: 1.3rem;
+  }
+  li {
+    margin-bottom: 1.5em;
+  }
+  .logo-div-header {
+    width: 30%;
+    margin-left: 1em;
+  }
+  .logo-div {
+    width: 100%;
+  }
+  .main-text {
+    width: 90%;
+  }
+  .main-text p {
+    font-size: 0.9rem;
+  }
+  .main-img-p {
     position: absolute;
-    top: 25%;
-    left: 45%;
+    top: 13%;
+    left: 25%;
     color: #fff;
     font-size: 2.5rem;
-}
-.main-text{
-    font-family: "Open Sans", sans-serif;
-}
-h1{
-    color:#3e71d4;
-    margin-bottom: 0.5em;
-    font-weight: 800;
-}
-.main-text{
-    width: 65%;
-    margin: 3em auto;
-    line-height: 1.7em;
-}
-footer{
-    background-image: url(images/wave.png);
-    background-repeat: no-repeat;
-    background-color: #315aa9;
+  }
+  h1 {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+  footer {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2em 1em;
+  }
+  .logo-div-footer {
     grid-template-columns: 1fr 1fr 1fr;
     color: #fff;
     padding: 3em 1em;
     font-family: "Cascadia Code",Consolas,'Courier New',monospace;
     min-height: 40vh;
-}
-.logo-div-footer{
     margin-bottom: 1em;
-}
-h4{
-    margin-bottom: 1em;
-}
-.social{
-    font-family: "Lora", sans-serif;
-    font-weight: 700;
-}
-.fa-brands{
-    margin-right: 1em;
-}
-.fa-brands:hover{
-    color: rgba(170, 170, 170, 1);
-}
-.footer-ul{
-    display: block;
-}
-.footer-li{
-    margin-bottom: 1em;
-}
-.footer-link{
-    color: #fff;
-    margin-bottom: 1em;
-}
-.footer-link:active{
-    color: rgba(85, 85, 85, 1);
-}
-input{
-    width: 80%;
-    padding: 1em 2em;
-    border: none;
-    border-radius: 0.5rem;
-    font-family: "Cascadia Code",Consolas,'Courier New',monospace;
-}
-input:placeholder-shown{
-    color: rgba(170, 170, 170, 1);
-    letter-spacing: 1.1px;
-}
-.footer-btn{
-    position: absolute;
-    right: 7em;
-    background-color: #000;
-     color: #fff;;
-     padding: 1em;
-     border: none;
-     border-radius: 1rem;
-     width: 10%;
-     font-family: "Cascadia Code",Consolas,'Courier New',monospace;
-}
-.footer-btn:hover, .footer-btn:active{
-    transform: translateX(3px);
+    width: 70%;
+  }
+  .footer-logo {
+    width: 100%;
+  }
+  .fa-brands {
+    font-size: 0.8rem;
+  }
+  .footer-list {
+    margin-left: auto;
+  }
+  input {
+    width: 100%;
+    display: inline-block;
+  }
+  .footer-btn {
+    right: 5em;
+    width: 40%;
+  }
+  .div-footer-one {
+    margin-bottom: 0;
+  }
 }
 
-@media (min-width:700px) and (max-width: 1000px){
-    nav{
-        font-size: 1rem;
-    }
-    .logo-div{
-        width: 80%;
-    }
-    .header-btn{
-        font-size: 1rem;
-    }
-    .left{
-        margin-right: 1em;
-    }
-    .main-img-p{
+
+@media (min-width: 500px) and (max-width: 700px){
+    .main-img-p {
         top: 20%;
-    }
-    .footer-btn{
-        right: 1em;
-    }
+        left: 30%;
+        font-size: 2.5rem;
+      }
+    .footer-btn {
+        right: 7em;
+        width: 40%;
+      }
 }
