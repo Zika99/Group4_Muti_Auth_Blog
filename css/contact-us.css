@@ -1,0 +1,265 @@
+
+
+@import url('http://fonts.cdnfonts.com/css/cascadia-code');
+
+
+@import url("http://fonts.googleapis.com/css2?family=Open+Sans&display=swap"); 
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   text-decoration: none; 
+  /* font-family: open sans; */
+
+}
+
+body{
+  font-family: open sans;
+} 
+
+.contact-us-header{
+  width: 100%;
+  background: #315AA9;
+}
+
+.brain-wav-img-div{
+   /* border: 3px solid black; */
+  padding-left: 25px; 
+  padding-top: 20px;
+  /* width: 20%; */
+}
+
+.brain-wav-img{
+  width: 25%;
+}
+
+.contact-us-p-div{
+  /* border: 4px solid red; */
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+
+.contact-us-p{
+  /* border: 4px solid yellow; */
+  text-align: center;
+  font-weight: 800;
+  font-family: open sans;
+  font-size: 1.9rem;
+  color: #fff;
+ margin-top: -130px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+}
+
+.header-flex-png-div{
+  padding-bottom: 40px;
+  margin-top: 20px;
+}
+
+.header-flex-png{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  /* margin-top: 20px; */
+
+}
+
+
+.leave-a-msg-container{
+  /* border: 4px solid red; */
+  width: 65%;
+  margin: auto;
+  margin-top: -50px;
+  margin-bottom: 70px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
+}
+
+.mssg{
+  /* border: 4px solid red; */
+  display: flex;
+  color: #3e75e4;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 25px;
+  font-family: open sans;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.inputt-div{
+  /* border: 4px solid blue; */
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  border: none;
+  margin: 0 auto;
+}
+
+.inputt{
+  text-align: left;
+  padding: 18px;
+  border-radius: 4px;
+  background: #e3e3e3;
+  margin: 10px;
+  border: transparent;
+
+}
+
+.msg-height{
+  margin: 10px;
+  background: #e3e3e3;
+  height: 50vh;
+  vertical-align: top;
+  border-radius: 4px;
+}
+
+textarea::placeholder{
+  padding: 10px;
+
+}
+
+.send-now-button{
+  background-color: #315AA9;
+  margin: 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 0;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 35px;
+}
+
+
+
+.send-now-imgg{
+  margin-left:12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  (max-width:375px)  {
+
+
+
+  .contact-us-header{
+    width: 100%;
+    background: #315AA9;
+  }
+  
+  .brain-wav-img-div{
+     /* border: 3px solid black; */
+    padding-top: 120px;
+    padding-bottom: 50px;
+    width: 75%;
+    margin: auto;
+  }
+  
+  .brain-wav-img{
+    width: 100%;
+    /* width: 25%; */
+  }
+
+  
+.header-flex-png{
+  /* border: 7px solid white; */
+  width: 100%;
+  padding-bottom: 50px;
+  margin: auto;
+
+  
+
+}
+
+.contact-us-p-div{
+  border: 4px solid red;
+  display: flex;
+  justify-content: center;
+  margin:  auto;
+  margin-top: 70px;
+  margin-bottom: -50px;
+
+}
+
+
+.contact-us-p{
+  font-size: 1.3rem;
+
+}
+
+
+.leave-a-msg-container{
+  border-radius: 0px;
+  box-shadow: none;
+
+  width: 100%;
+
+}
+
+.mssg{
+  font-size: 20px;
+}
+
+
+.inputt-div{
+  width: 90%;
+}
+
+
+
+.msg-height{
+  height: 25vh;
+}
+
+.send-now-button{
+  margin-bottom: 0px;
+}
+
+
+
+  
+
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
