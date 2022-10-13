@@ -1,6 +1,6 @@
-var content = document.getElementsByTagName('body')[0];
-var darkMode = document.getElementById('dark-change');
-darkMode.addEventListener('click', function(){
-    darkMode.classList.toggle('active');
-    content.classList.toggle('night');
+const hamBurger = document.querySelector(".fa-bars");
+const navList = document.querySelector(".nav-list");
+
+hamBurger.addEventListener("click",()=>{
+    navList.classList.toggle("active");
 })
