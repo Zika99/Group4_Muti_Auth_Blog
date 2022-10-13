@@ -13,36 +13,37 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="logo">
-        <img src="./img for blog page/brainwave logo 2.svg" alt="" />
-      </div>
-      <ul class="list1">
-        <li class="nav-items">
-          <a href="./index.html">Home</a>
-        </li>
-        <li class="nav-items">
-          <a href="#">Blog</a>
-          <hr class="line" />
-        </li>
-        <li class="nav-items">
-          <a href="./write.html">Write</a>
-        </li>
-        <li class="nav-items">
-          <a href="./aboutus.html">About Us</a>
-        </li>
-      </ul>
-
-      <ul class="list2">
-        <li class="nav-items2">
-          <a href="./login.html">Login</a>
-        </li>
-        <li class="nav-items2 signup">
-          <a href="#" style="color: #fff">Sign up</a>
-        </li>
-      </ul>
-    </nav>
     <header>
+      <nav>
+        <i class="fa fa-bars"></i>
+        <div class="logo-div-header">
+          <img src="images/brainwave logo 2.svg" alt="brainwave logo" class="logo-div"/>
+        </div>
+        <div class="nav-list">
+          <div class="nav-list-div">
+          <ul class="header-ul">
+            <li class="header-list"><a href="./index.html" class="header-link">Home</a></li>
+            <li class="header-list">
+              <a href="./blog.html" class="header-link about">Blogs</a>
+            </li>
+            <li class="header-list">
+              <a href="" class="header-link">Write</a>
+            </li>
+            <li class="header-list">
+              <a href="./aboutus.html" class="header-link">About Us</a>
+            </li>
+          </ul>
+            <ul class="header-ul left">
+              <li class="header-list-left">
+                <a href="" class="header-link">Login</a>
+              </li>
+              <button class="header-btn">Sign Up</button>
+            </ul>
+          </div>
+          </div>
+      </nav>
+    </header>
+    <header style="margin: 20px auto;">
       <div class="header">
         <img
           src="./img for blog page/circle1.svg"
@@ -77,13 +78,13 @@
     </header>
 
     <div class="container">
-      <nav class="secondnav">
+      <nav class="secondnav" style="margin: 0;">
         <ul class="tp">
           <li class="topics all">
             <a href="#">All</a>
           </li>
           <li class="topics">
-            <a href="#">Technology</a>
+            <a href="./technology.html">Technology</a>
           </li>
           <li class="topics">
             <a href="#">Money</a>
@@ -482,6 +483,42 @@
     </div>
 
     <footer>
+      <div class="div-footer-one">
+        <div class="logo-div-footer">
+          <img src="images/Brain wave 1.svg" alt="brainwave logo" class="footer-logo"/>
+        </div>
+        <div class="social">
+          <h4>Connections</h4>
+          <!-- <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-behance"></i>
+          </div> -->
+        </div>
+      </div>
+      <div class="footer-list">
+        <ul class="footer-ul">
+          <li class="footer-li"><b>Explore</b></li>
+          <li class="footer-li">
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+          <li class="footer-li">
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+          <li class="footer-li">
+            <a href="./faq.html" class="footer-link">FAQ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="subscibe">
+        <input type="email" placeholder="Email" required/>
+        <button class="footer-btn">Subscibe</button>
+      </div>
+    </footer>
+
+    <!-- <footer>
       <div class="footer">
         <img
           src="./img for blog page/wave (1).svg"
@@ -532,6 +569,6 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>

@@ -52,7 +52,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 .header-list {
   margin-left: 2em;
@@ -73,15 +73,15 @@ a:hover {
 .header-btn {
   background-color: rgba(25, 45, 85, 1);
   color: #fff;
-  padding: 0.2em;
+  padding: 0.4em 1em;
   border: none;
-  border-radius: 1rem;
+  border-radius: 12px;
   font-family: "Cascadia Code", Consolas, "Courier New", monospace;
   font-size: 1.2rem;
 }
 .header-btn:hover {
   opacity: 0.8;
-  transform: translateY(-3px);
+  /* transform: translateY(-3px); */
 }
 .fa-bars {
   display: none !important;
