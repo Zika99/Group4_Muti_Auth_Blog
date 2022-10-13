@@ -58,9 +58,9 @@ body.night {
 
   /* NEW NAVBAR */
 
-  /* header {
+  header {
     font-family: "Cascadia Code", Consolas, "Courier New", monospace;
-  } */
+  }
 
   .logo-div-header{
     display: flex;
