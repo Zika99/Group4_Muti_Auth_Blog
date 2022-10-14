@@ -857,6 +857,11 @@ body.night {
     .header{
       margin: 0 auto;
     }
+    .gop{
+      /* visibility: hidden; */
+      margin-bottom: 60px;
+      /* display: none; */
+    }
   }
 
   @media screen and (max-width: 460px) {
@@ -875,6 +880,12 @@ body.night {
     .header{
       margin: 0 auto;
     }
+
+    .gop{
+      /* visibility: hidden; */
+      margin-bottom: 80px;
+      /* display: none; */
+    }
   }
 
   @media screen and (max-width: 360px) {
@@ -889,7 +900,7 @@ body.night {
 
 
     .auth{
-      margin-bottom: -120px;
+      /* margin-bottom: -120px; */
     }
 
     .article-img{
@@ -899,6 +910,16 @@ body.night {
 
     .header{
       margin: 0 auto;
+    }
+
+    .footer{
+      margin-top: -200px;
+    }
+
+    .gop{
+      /* visibility: hidden; */
+      margin-bottom: 100px;
+      /* display: none; */
     }
   }
 
