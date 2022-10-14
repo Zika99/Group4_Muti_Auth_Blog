@@ -244,6 +244,10 @@ body.night {
     margin-bottom: 20px;
   }
 
+  .topics a{
+    color: #4a4a4a;
+  }
+
   .all{
     background-color: #192d55;
     padding: 10px 12px;
