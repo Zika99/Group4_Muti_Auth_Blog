@@ -1,0 +1,89 @@
+@import url('http://fonts.cdnfonts.com/css/cascadia-code');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------------------------START OF NAV SECTION------------------------- */
+
+nav {
+    grid-area: nav;
+    position: fixed;
+    height: 100vh;
+    box-shadow: 2px 0 10px rgb(218, 214, 214);
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.curve3, .curve2, .curve1 {
+    position: absolute;
+    opacity: 0.3;
+}
+
+.curve3 {
+    bottom: 5rem;
+    left: 0;
+}
+
+.curve2 {
+    bottom: 2rem;
+    left: 0;
+}
+
+.curve1 {
+    bottom:-2.2rem;
+    left: 2rem;
+}
+
+.logo {
+    width: 75%;
+}
+
+.nav-icons {
+    margin: 5rem;
+}
+
+.nav-icons img{
+    display: block;
+    margin-top: 2rem;
+    width: 80%;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #315AA9;
+    margin: auto;
+}
+
+.profile-pic a {
+    color: #FFFFFF;
+    font-size: 35px;
+}
+
+/* Container  */
+
+#container{
+    text-align: center;
+}
+
+#sent-image{
+    width: 35%;
+    height: 35%;
+    margin-top: 60px;
+}
+
+#sent-text{
+    text-align: center;
+    font-family: 'Cascadia Code';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 56px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
