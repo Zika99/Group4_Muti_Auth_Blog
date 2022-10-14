@@ -1,4 +1,4 @@
- @import url('http://fonts.cdnfonts.com/css/cascadia-code');
+@import url('http://fonts.cdnfonts.com/css/cascadia-code');
  
 @import url('http://fonts.cdnfonts.com/css/open-sans');
                 
@@ -16,38 +16,6 @@
     max-width: 1440px;
     /* font-family: 'cascadia-code', sans-serif; */
   }
-/* CSS for Theme mode */
-label {
-  position: absolute;
-  width: 45px;
-  height: 27px;
-  right: 20px;
-  top: 20px;
-  border: 2px solid #192d55;
-  border-radius: 20px;
-}
-label:before {
-  position: absolute;
-  content: "";
-  width: 20px;
-  height: 20px;
-  left: 1px;
-  top: 1px;
-  border-radius: 50%;
-  background: #192d55;
-  cursor: pointer;
-  transition: 0.4s;
-}
-label.active:before {
-  left: 24px;
-  background: #fff;
-}
-body.night {
-  background: #000;
-  color: #fff;
-}
-
-/* End of css for theme mode */
 
   html{
     scroll-behavior: smooth;
@@ -57,7 +25,7 @@ body.night {
     font-family: 'Cascadia Code', sans-serif;
     margin-top: 1rem;
     /* font-weight: 600; */
-    width: 99%;
+    width: 100%;
     margin: 10px auto;
     display: flex;
     /* made it wrap else it will overflow in smaller screen, distorting the design */
@@ -68,12 +36,10 @@ body.night {
   
   .logo {
     display: flex;
-    flex-basis: 15%;
-    flex-shrink: 0;
+    flex-basis: 10%;
   }
   
   .logo img {
-    /* flex-shrink: 0; */
     width: 90%;
   }
   
@@ -410,16 +376,15 @@ body.night {
   }
   
   .back {
-    margin-top: 15px;
+    margin-top: 20px;
     background-color: #192d55;
     color: white;
     padding: 0.5rem 1rem;
-    font-family: 'cascadia-code', sans-serif;
     text-decoration: none;
     border-radius: 5px;
   }
   
-  /* MEDIA QUERIES FOR BLOG PAGE STARTS HERE */
+  /* MEDIA QUERIES FOR TECHNOLOGY PAGE STARTS HERE */
   
   @media screen and (max-width: 700px) {
     .articles {
@@ -430,10 +395,6 @@ body.night {
       padding: unset;
       margin-bottom: 5px;
     }
-
-    /* .hero img{
-      width: 100%;
-    } */
   }
-  /* MEDIA QUERIES FOR BLOG PAGE ENDS HERE */
+  /* MEDIA QUERIES FOR TECHNOLOGY PAGE ENDS HERE */
   
