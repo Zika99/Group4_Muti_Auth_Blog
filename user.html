@@ -16,19 +16,25 @@
     <a href="index.html"><img src="/user imgs/brainwave logo 2.svg" alt="brainwave logo" class="logo" /></a>
     <div class="nav-icons">
       <a href="./index.html" title="Home"><img src="/image for preview/home-icon.png" alt="home icon" /></a>
-      <a href="./notification.html" title="Notification"><img src="/image for preview/notification-icon.png" alt="notification icon" /></a>
+      <a href="./notification.html" title="Notification"><img src="/image for preview/notification-icon.png"
+          alt="notification icon" /></a>
       <a href="./list.html" title="Lists"><img src="/image for preview/list-icon.png" alt="" /></a>
       <a href="#" title="Stories"><img src="/image for preview/book.svg" alt="stories icon" /></a>
-      <a href="#"><img src="/user imgs/line 11.svg" alt=""></a>
+      <img src="/user imgs/line 11.svg" alt="">
       <a href="./write.html" title="Write"><img src="/image for preview/pen-icon.png" alt="write icon" /></a>
     </div>
-    <div class="profile-pic"><a href="" title="Profile">A</a></div>
+    <a href="./profile.html" title="Profile"><img class="profile-pic" src="/user imgs/profile-pic.svg" alt=""></a>
     <img class="curve3" src="/user imgs/curve3.svg">
     <img class="curve2" src="/user imgs/curve2.svg">
     <img class="curve1" src="/user imgs/curve1.svg">
   </nav>
+  <label class="switch">
+    <input type="checkbox">
+    <span class="slider round"></span>
+  </label>
   <header>
     <h1>LET'S GROW TOGETHER</h1>
+    <img class="rectangle" src="/user imgs/Group 6.svg" alt="">
     <img class="wave one" src="/user imgs/firstWave.svg" />
     <img class="wave two" src="/user imgs/secondWave.svg" />
     <img class="wave three" src="/user imgs/thirdWave.svg" />
@@ -269,37 +275,42 @@
           <p>Arts & Design</p>
         </div>
       </div>
-      <a href=""><p class="see-all">See all</p></a>
+      <div>
+        <button class="see-all" id="see-all">See all</button>
+      </div>
       <!------------------------------------------------------------create a dropdown----------------------- -->
-      <div class="cat">
-        <a href=""><img src="/user imgs/categoryHealth.svg" alt="health category" /></a>
-        <div class="cat-tag">
-          <p>Health</p>
+      <div id="see-all-cat">
+        <div class="cat">
+          <a href=""><img src="/user imgs/categoryHealth.svg" alt="health category" /></a>
+          <div class="cat-tag">
+            <p>Health</p>
+          </div>
         </div>
-      </div>
-      <div class="cat">
-        <a href=""><img src="/user imgs/categoryReligion.svg" alt="religion category" /></a>
-        <div class="cat-tag">
-          <p>Religion</p>
+        <div class="cat">
+          <a href=""><img src="/user imgs/categoryReligion.svg" alt="religion category" /></a>
+          <div class="cat-tag">
+            <p>Religion</p>
+          </div>
         </div>
-      </div>
-      <div class="cat">
-        <a href=""><img src="/user imgs/categoryProductivity.svg" alt="categoryProductivity category" /></a>
-        <div class="cat-tag">
-          <p>Productivity</p>
+        <div class="cat">
+          <a href=""><img src="/user imgs/categoryProductivity.svg" alt="categoryProductivity category" /></a>
+          <div class="cat-tag">
+            <p>Productivity</p>
+          </div>
         </div>
-      </div>
-      <div class="cat">
-        <a href="./money.html"><img src="/user imgs/categoryMoney.svg" alt="money category" /></a>
-        <div class="cat-tag">
-          <p>Money</p>
+        <div class="cat">
+          <a href="./money.html"><img src="/user imgs/categoryMoney.svg" alt="money category" /></a>
+          <div class="cat-tag">
+            <p>Money</p>
+          </div>
         </div>
-      </div>
-      <div class="cat">
-        <a href=""><img src="/user imgs/categoryBusiness.svg" alt="business category" /></a>
-        <div class="cat-tag">
-          <p>Business</p>
+        <div class="cat">
+          <a href=""><img src="/user imgs/categoryBusiness.svg" alt="business category" /></a>
+          <div class="cat-tag">
+            <p>Business</p>
+          </div>
         </div>
+        <button class="hide" id="hide">Hide</button>
       </div>
     </div>
     <h3 class="latest-post-h3">Latest Post</h3>
@@ -359,6 +370,17 @@
       </div>
     </div>
   </aside>
+  <footer>
+    <div class="nav-icons">
+      <a href="./index.html" title="Home"><img src="/image for preview/home-icon.png" alt="home icon" /></a>
+      <a href="#" class="search-mobile" title="Search"><img
+          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E"
+          alt="stories icon" /></a>
+      <a href="./list.html" title="Lists"><img src="/image for preview/list-icon.png" alt="" /></a>
+      <a href="./profile.html" title="Profile"><img class="profile-pic" src="/user imgs/profile-pic.svg" alt=""></a>
+    </div>
+  </footer>
+  <script src="./user.js"></script>
 </body>
 
 </html>
