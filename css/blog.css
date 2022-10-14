@@ -847,7 +847,58 @@ body.night {
 
   @media screen and (max-width: 560px) {
     .articles{
-      margin-top: -50px;
+      margin-top: -30px;
+    }
+
+    .auth{
+      margin-bottom: -50px;
+    }
+
+    .header{
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (max-width: 460px) {
+    .articles{
+      margin-top: -80px;
+    }
+
+    .article-img{
+      margin-bottom: -100px;
+    }
+
+    .auth{
+      margin-bottom: -100px;
+    }
+
+    .header{
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    .articles{
+      margin-top: -100px;
+      /* margin-bottom: -60px; */
+    }
+
+    .card{
+      /* margin-bottom: -60px; */
+    }
+
+
+    .auth{
+      margin-bottom: -120px;
+    }
+
+    .article-img{
+      margin-bottom: -150px;
+      /* margin-top: -90px; */
+    }
+
+    .header{
+      margin: 0 auto;
     }
   }
 
