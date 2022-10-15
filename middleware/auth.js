@@ -10,14 +10,14 @@ const isAuth = (req, res, next) => {
     jwt.verify(token, process.env.JWT_SECRET, (err, decodedToken) => {
       if (err) {
         console.log(err.message);
-        res.redirect('/signin');
+        res.redirect('/login');
       } else {
         console.log(decodedToken);
         next();
       }
     });
   } else {
-    res.redirect('/signin');
+    res.redirect('/login');
   }
 };
 

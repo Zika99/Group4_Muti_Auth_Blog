@@ -1,14 +1,21 @@
 const express = require('express');
 const userRoute = express.Router();
-const controller = require('../controllers/userController');
+const userController = require('../controllers/userController');
 const { isAuth } = require('../middleware/auth');
 
-// signup API route
-userRoute.post('/signup', controller.signup);
-userRoute.get('/signup', controller.signUp);
+// userRoute.get('/signup', controller.signUp);
+userRoute.get('/', userController.index);
+userRoute.get('/login', userController.signIn);
+userRoute.get('/signup', userController.signUp);
+userRoute.get('/aboutus', userController.about);
+// userRoute.get('/preview', userController.preview);
 
-// signin API route
-userRoute.post('/signin', controller.signin);
-userRoute.get('/signin', controller.signIn);
+userRoute.post('/login', userController.signin);
+userRoute.post('/signup', userController.signup);
+userRoute.get('/logout', userController.logout_get);
+userRoute.get('/forgot-password', userController.getForgotPassword);
+userRoute.post('/forgot-password', userController.forgotPassword);
+userRoute.get('/reset-password/:token', userController.getResetPassword);
+userRoute.post('/reset-password/:token', userController.resetPassword);
 
 module.exports = userRoute;

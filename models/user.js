@@ -1,20 +1,11 @@
 const mongoose = require('mongoose');
 const validator = require('validator');
 const bcrypt = require('bcryptjs');
+const crypto = require('crypto');
 
 // user schema
 const userSchema = new mongoose.Schema(
   {
-    firstName: {
-      type: String,
-      required: true,
-      trim: true,
-    },
-    lastName: {
-      type: String,
-      required: true,
-      trim: true,
-    },
     email: {
       type: String,
       unique: true,
@@ -33,7 +24,16 @@ const userSchema = new mongoose.Schema(
       minlength: [6, 'Minimum password length is 6 characters'],
       trim: true,
     },
+    username: {
+      type: String,
+      required: true,
+      trim: true,
+    },
+    passwordConfirm: String,
+    resetPasswordToken: String,
+    resetPasswordExpires: Date,
   },
+
   {
     timestamps: true,
   }
@@ -58,6 +58,18 @@ userSchema.statics.login = async function (email, password) {
     throw Error('Unable to login');
   }
   throw Error('Unable to login');
+};
+
+userSchema.methods.createPasswordResetToken = function () {
+  const token = crypto.randomBytes(32).toString('hex');
+
+  this.resetPasswordToken = crypto.createHash('sha256').update(token).digest('hex');
+
+  // console.log({ resetToken }, this.passwordResetToken);
+
+  this.resetPasswordExpires = Date.now() + 10 * 60 * 1000;
+
+  return token;
 };
 
 const User = mongoose.model('User', userSchema);

@@ -1,10 +1,17 @@
 const User = require('../models/user.js');
 const jwt = require('jsonwebtoken');
+const mailgun = require('mailgun-js');
+const _ = require('lodash');
+const DOMAIN = 'sandboxb81adb88d8ce413f8eebc3c0aadd6419.mailgun.org';
+const mg = mailgun({
+  apiKey: process.env.MAILGUN_APIKEY,
+  domain: DOMAIN,
+});
 
 // handle errors
 const handleErrors = (err) => {
   console.log(err.message, err.code);
-  let errors = { firstName: '', lastName: '', email: '', password: '' };
+  let errors = { email: '', password: '', username: '' };
 
   // incorrect email
   if (err.message === 'Unable to login') {
@@ -30,9 +37,20 @@ const handleErrors = (err) => {
       errors[properties.path] = properties.message;
     });
   }
-
   return errors;
 };
+
+exports.index = async (req, res) => {
+  res.render('index');
+};
+
+exports.about = async (req, res) => {
+  res.render('aboutus');
+};
+
+// exports.preview = async (req, res) => {
+//   res.render('preview');
+// };
 
 // creates json web token which will be used for authentication
 const maxAge = 3 * 24 * 60 * 60;
@@ -52,6 +70,7 @@ exports.signin = async (req, res) => {
     const token = createToken(user._id);
     res.cookie('jwt', token, { httpOnly: true, maxAge: maxAge * 1000 });
     res.status(200).json({ user: user._id, token });
+    // res.redirect('/');
   } catch (error) {
     const errors = handleErrors(error);
     res.status(400).json({ errors });
@@ -61,11 +80,12 @@ exports.signin = async (req, res) => {
 
 // signUp functionality
 exports.signup = async (req, res) => {
-  const { firstName, lastName, email, password, date_of_birth } = req.body;
+  const { email, password, username } = req.body;
   try {
-    const user = await User.create({ firstName, lastName, email, password, date_of_birth });
+    const user = await User.create({ email, password, username });
     const token = createToken(user._id);
     res.cookie('jwt', token, { httpOnly: true, maxAge: maxAge * 1000 });
+    // res.redirect('/');
     res.status(201).json({ user: user._id });
   } catch (err) {
     const errors = handleErrors(err);
@@ -85,5 +105,94 @@ exports.signUp = (req, res) => {
 };
 
 exports.signIn = (req, res) => {
-  res.status(200).render('signin.ejs');
+  res.status(200).render('login.ejs');
+};
+
+exports.getForgotPassword = (req, res) => {
+  res.render('forgotpassword');
+};
+
+exports.forgotPassword = async (req, res) => {
+  console.log('userrrrr');
+  const user = await User.findOne({ email: req.body.email });
+  if (!user) {
+    return res.send('user not found');
+  }
+  const token = user.createPasswordResetToken();
+  console.log(token);
+  user.resetPasswordToken = token;
+  await user.save();
+  // res.status(200).json({
+  //   status: 'success',
+  //   message: 'Token sent to email!',
+  // });
+  try {
+    const data = {
+      from: MAILGUN_FROM,
+      to: EMAIL_USER,
+      subject: 'reset your password',
+      // text: "Testing some Mailgun awesomness!",
+      html: `
+      <h2>Please copy the given link to activate your account</h2>
+      <p>${req.headers.host}/reset-password/${token}<p>
+      `,
+    };
+
+    mg.messages().send(data, function (error, body) {
+      console.log(body);
+      if (error) {
+        return res.json({
+          error: error.message,
+        });
+      }
+      res.render('emailsent.ejs');
+      // return res.json({
+      //   message: 'Email has been sent, kindly follow your instructions',
+      // });
+    });
+  } catch (err) {
+    user.resetPasswordToken = undefined;
+    user.resetPasswordExpires = undefined;
+    await user.save({ validateBeforeSave: false });
+    res.send(err);
+  }
+};
+
+exports.getResetPassword = (req, res) => {
+  User.findOne(
+    { resetPasswordToken: req.params.token, resetPasswordExpires: { $gt: Date.now() } },
+    function (err, user) {
+      if (!user) {
+        //  req.flash('error', 'Password reset token is invalid or has expired.');
+        return res.redirect('/forgot-password');
+      }
+      res.render('resetpassword', { token: req.params.token });
+    }
+  );
+};
+
+exports.resetPassword = async (req, res) => {
+  // const hashedToken = crypto.createHash('sha256').update(req.params.token).digest('hex');
+  // console.log(hashedToken);
+  console.log(req.params.token);
+  try {
+    const user = await User.findOne({
+      resetPasswordToken: req.params.token,
+      resetPasswordExpires: { $gt: Date.now() },
+    });
+    console.log(user);
+    if (!user) {
+      return res.send('no user found');
+    }
+    user.password = req.body.password;
+    user.passwordConfirm = req.body.passwordConfirm;
+    user.resetPasswordToken = undefined;
+    user.resetPasswordExpires = undefined;
+    console.log(user);
+    await user.save();
+    res.render('passwordChanged');
+    // res.json({ success: 'password updated' });
+  } catch (e) {
+    res.send(e);
+  }
 };

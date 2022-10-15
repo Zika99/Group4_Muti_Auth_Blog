@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/write.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <title>Write for us</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- <div class="first-section">
+            <header>
+                <div class="top">
+                    <div class="logo-div"><img class="logo" src="./img for preview/brainwave logo 2.svg" alt=""></div>
+                </div>
+            </header>
+        </div> -->
+      <div class="container">
+        <h3 style="text-align: center; padding-top: 90px">Tools</h3>
+        <ul>
+          <li>
+            <a class="link" href="#" title="Italics"><img src="/img for write/bx_italic.svg" alt="" /></a>
+          </li>
+          <li>
+            <a class="link" href="#" title="Add image"><img src="/img for write/akar-icons_image.svg" alt="" /></a>
+          </li>
+        </ul>
+
+        <hr style="margin: 30px 0" />
+
+        <ul>
+          <li>
+            <button class="link" id="delete" href="#" title="delete">
+              <img src="/img for write/fluent_delete-28-regular.svg" alt="" />
+            </button>
+          </li>
+        </ul>
+      </div>
+      <form action="/post" method="POST">
+        <div class="section-two">
+          <header>
+            <div class="top">
+              <div class="logo-div"><img class="logo" src="/img for blog page/brainwave logo 2.svg" alt="" /></div>
+              <div class="right">
+                <div class="options">
+                  <button href="#" class="preview">Preview</button>
+                  <button href="#" class="publish">Publish</button>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <main>
+            <input type="text" name="title" placeholder="Title." /> <br />
+
+            <textarea placeholder="Tell your story" name="markdown"></textarea>
+          </main>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      let btnClear = document.querySelector('button');
+      let inputs = document.querySelectorAll('input');
+      let input = document.querySelectorAll('textarea');
+
+      btnClear.addEventListener('click', () => {
+        inputs.forEach((input) => (input.value = ''));
+      });
+
+      btnClear.addEventListener('click', () => {
+        input.forEach((textarea) => (textarea.value = ''));
+      });
+    </script>
+  </body>
+</html>

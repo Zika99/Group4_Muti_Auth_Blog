@@ -1,0 +1,54 @@
+<nav class="navbar">
+  <div class="logo">
+    <a href="./"><img src="./img for blog page/brainwave logo 2.svg" alt="" /></a>
+  </div>
+  <% if (user) { %>
+  <div>
+    <ul class="list1">
+      <li class="nav-items">
+        <a href="/">Home</a>
+        <hr class="line" />
+      </li>
+      <li class="nav-items">
+        <a href="./blog">Blog</a>
+      </li>
+      <li class="nav-items">
+        <a href="/write">Write</a>
+      </li>
+      <li class="nav-items">
+        <a href="/aboutus">About Us</a>
+      </li>
+      <li class="nav-items">
+        <a href="/logout">logout</a>
+      </li>
+    </ul>
+  </div>
+  <%} else { %>
+  <div>
+    <ul class="list2">
+      <li class="nav-items">
+        <a href="/">Home</a>
+        <hr class="line" />
+      </li>
+      <li class="nav-items">
+        <a href="./blog">Blog</a>
+      </li>
+      <li class="nav-items">
+        <a href="/write">Write</a>
+      </li>
+      <li class="nav-items">
+        <a href="/aboutus">About Us</a>
+      </li>
+      <li class="nav-items2">
+        <a href="/login">Login</a>
+      </li>
+      <li class="nav-items2 signup">
+        <a href="/signup" style="color: #fff">Sign up</a>
+      </li>
+    </ul>
+    <% } %>
+  </div>
+  <div>
+    <label id="dark-change"></label>
+  </div>
+</nav>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/contact-us.css" />
+    <title>Contact Us Page</title>
+  </head>
+  <body>
+    <header class="contact-us-header">
+      <div class="brain-wav-img-div">
+        <a href=""> <img src="contact us imgs/Brain wave 1.png" alt="" class="brain-wav-img" /> </a>
+      </div>
+
+      <div class="header-flex-png-div">
+        <img src="contact us imgs/Vector (3-).png" alt="" class="header-flex-png" />
+      </div>
+
+      <div class="contact-us-p-div">
+        <p class="contact-us-p">CONTACT US</p>
+      </div>
+    </header>
+
+    <main>
+      <form action="/contact" method="POST">
+        <div class="leave-a-msg-container">
+          <p class="mssg">Leave us a Message</p>
+
+          <div class="inputt-div">
+            <input type="text" name="name" id="name" placeholder="Your name" class="inputt" />
+
+            <input type="text" name="email" id="email" placeholder="Your Email Address" class="inputt" />
+
+            <textarea
+              class="msg-height"
+              name="message"
+              id="messages"
+              cols="30"
+              rows="10"
+              placeholder="Messages"
+            ></textarea>
+
+            <button class="send-now-button">
+              <span class="s-n">Send Now</span> <img src="contact us imgs/Arrow 1.png" alt="" class="send-now-imgg" />
+            </button>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

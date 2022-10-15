@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('http://fonts.cdnfonts.com/css/cascadia-code');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f5f5f5;
+}
+image{
+    max-width: 100%;
+}
+header{
+    font-family: "Cascadia Code",Consolas,'Courier New',monospace;
+}
+html{
+    scroll-behavior: smooth;
+}
+  
+  .navbar {
+    font-family: 'Cascadia Code', sans-serif;
+    /* margin-top: 0.8rem; */
+    /* font-weight: 600; */
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    /* made it wrap else it will overflow in smaller screen, distorting the design */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  
+  .logo {
+    display: flex;
+    /* width: 15%; */
+    flex-basis: 15%;
+    flex-shrink: 0;
+  }
+  
+  .logo img {
+    /* flex-shrink: 0; */
+    width: 90%;
+  }
+  
+  .list1 {
+    flex-basis: 50%;
+  }
+  
+  .list2 {
+    flex-basis: 23%;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+  }
+  
+  nav ul li a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #4a4a4a;
+  }
+  
+  .nav-items {
+    padding: 1rem 2.1rem;
+    margin-bottom: 5px;
+  }
+  
+  .blog {
+    border-bottom: 3px solid #192d55;
+  }
+  
+  hr {
+    background-color: #3e71d4;;
+  }
+  
+  .line {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 35px;
+    height: 3px;
+    outline: none;
+    /* margin-top: 5px; */
+    color: #192d55;
+  }
+  .nav-items2 {
+    padding: 0.5rem 1.5em;
+  }
+  
+  .signup {
+    color: #ffffff;
+    background-color: #192d55;
+    border-radius: 15px;
+  }
+.main-img-div{
+    font-family: "Cascadia Code",Consolas,'Courier New',monospace;
+    width: 100%;
+}
+.img-div{
+    width: 100%;
+}
+.main-img{
+    width: 100%;
+    position: relative;
+}
+.overlay{
+    background-color: rgba(1, 54, 134, 0.4);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.main-img-p{
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    color: #fff;
+    font-size: 2.5rem;
+}
+.main-text{
+    font-family: "Open Sans", sans-serif;
+}
+h1{
+    color:#3e71d4;
+    margin-bottom: 0.5em;
+    font-weight: 800;
+}
+.main-text{
+    width: 65%;
+    margin: 3em auto;
+    line-height: 1.7em;
+}
+footer{
+    background-image: url(images/wave.png);
+    background-repeat: no-repeat;
+    background-color: #315aa9;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: #fff;
+    padding: 3em 1em;
+    font-family: "Cascadia Code",Consolas,'Courier New',monospace;
+    min-height: 40vh;
+}
+.logo-div-footer{
+    margin-bottom: 1em;
+}
+h4{
+    margin-bottom: 1em;
+}
+.social{
+    font-family: "Lora", sans-serif;
+    font-weight: 700;
+}
+.fa-brands{
+    margin-right: 1em;
+}
+.fa-brands:hover{
+    color: rgba(170, 170, 170, 1);
+}
+.footer-ul{
+    display: block;
+}
+.footer-li{
+    margin-bottom: 1em;
+}
+.footer-link{
+    color: #fff;
+    margin-bottom: 1em;
+}
+.footer-link:active{
+    color: rgba(85, 85, 85, 1);
+}
+input{
+    width: 80%;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 0.5rem;
+    font-family: "Cascadia Code",Consolas,'Courier New',monospace;
+}
+input:placeholder-shown{
+    color: rgba(170, 170, 170, 1);
+    letter-spacing: 1.1px;
+}
+.footer-btn{
+    position: absolute;
+    right: 7em;
+    background-color: #000;
+     color: #fff;;
+     padding: 1em;
+     border: none;
+     border-radius: 1rem;
+     width: 10%;
+     font-family: "Cascadia Code",Consolas,'Courier New',monospace;
+}
+.footer-btn:hover, .footer-btn:active{
+    transform: translateX(3px);
+}
+
+@media (min-width:700px) and (max-width: 1000px){
+    nav{
+        font-size: 1rem;
+    }
+    .logo-div{
+        width: 80%;
+    }
+    .header-btn{
+        font-size: 1rem;
+    }
+    .left{
+        margin-right: 1em;
+    }
+    .main-img-p{
+        top: 20%;
+    }
+    .footer-btn{
+        right: 1em;
+    }
+}
