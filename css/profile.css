@@ -70,7 +70,7 @@ nav {
 }
 
 /* -------------------------START OF TOGGLE SECTION-------------- */
-
+/* 
 .switch {
     position: absolute;
     display: inline-block;
@@ -131,8 +131,45 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%;
-}
+} */
 
+
+
+label {
+    position: absolute;
+    width: 45px;
+    height: 27px;
+    right: 40px;
+    top: 32px;
+    border: 2px solid #192d55;
+    border-radius: 20px;
+  }
+  label:before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    left: 1px;
+    top: 1px;
+    border-radius: 50%;
+    background: #192d55;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  label.active:before {
+    left: 24px;
+    background: #fff;
+  }
+  body.night {
+    background: #000;
+    color: #fff;
+  }
+  body .night p{
+    color: #fff;
+  }
+  
+  /* End of css for theme mode */
+  
 /* -----------------END OF TOGGLE SECTION------------------------ */
 /* -----------------START OF MAIN SECTION------------------------ */
 hr {
@@ -140,12 +177,22 @@ hr {
     margin-left: 12.2rem;
 }
 
-header,
+h1, h2{
+    color: #315aa9;
+}
 main {
     padding-left: 12.2rem;
     padding-top: 4.5rem;
 }
-
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 12.2rem;
+      padding-top: 2.0rem; 
+}
+header h1{
+    padding-top: 0;
+}
 .header {
     margin-left: 1.5rem;
 }
@@ -185,4 +232,7 @@ button {
     color: #fff;
     height: 2rem;
     cursor: pointer;
+}
+button:hover{
+    background: #315aa9;
 }

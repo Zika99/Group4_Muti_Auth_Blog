@@ -125,9 +125,15 @@ body.night {
     font-family: "Cascadia Code", Consolas, "Courier New", monospace;
     font-size: 1.2rem;
   }
+  .header-link:hover{
+    color:#3e71d4;
+  }
   .header-btn:hover {
     opacity: 0.8;
     transform: translateY(-3px);
+  }
+  .topics:hover{
+    color:#3e71d4;
   }
   .fa-bars {
     display: none !important;
