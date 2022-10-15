@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="blog.css" />
+    <link href="http://fonts.cdnfonts.com/css/cascadia-code" rel="stylesheet" />
+    <link href="http://fonts.cdnfonts.com/css/open-sans" rel="stylesheet" />
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  </head>
+  <body>
+    <%- include('./partials/header')%> <% if (user) { %>
+    <div class="user">welcome, <%= user.username %></div>
+    <% } %>
+
+    <header>
+      <div class="header">
+        <img src="./img for blog page/circle1.svg" alt="" width="40" class="circ1" />
+        <img src="./img for blog page/circle2.svg" alt="" width="40" class="circ2" />
+        <img src="./img for blog page/Group 6.svg" alt="" width="40" class="spk" />
+        <img src="./img for blog page/wave.svg" alt="" class="spkk" width="95%" />
+        <h3>LET'S GROW TOGETHER</h3>
+        <div class="input">
+          <input type="text" placeholder="Search" class="inp" />
+          <img src="./img for blog page/searchicon.svg" alt="" width="20" />
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <nav class="secondnav">
+        <ul class="tp">
+          <li class="topics all">
+            <a href="#">All</a>
+          </li>
+          <li class="topics">
+            <a href="#">Technology</a>
+          </li>
+          <li class="topics">
+            <a href="#">Money</a>
+          </li>
+          <li class="topics">
+            <a href="#">Business</a>
+          </li>
+          <li class="topics">
+            <a href="#">Productivity</a>
+          </li>
+          <li class="topics">
+            <a href="#">Mindfulness</a>
+          </li>
+          <li class="topics">
+            <a href="#">Religion</a>
+          </li>
+          <li class="topics">
+            <a href="#">Psycology</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="articles">
+        <% articles.forEach(article => { %>
+        <a href="/preview/<%= article.id %>" class="card">
+          <div class="crdimg" style="border-radius: 70px">
+            <img
+              src="./img for blog page/Group 9.svg"
+              alt=""
+              class="article-img first"
+              style="width: 385px; border-radius: 5px"
+            />
+          </div>
+          <p class="sub"><%= article.title %></p>
+          <p class="xxx"><%= article.markdown.slice(0,99)%>...</p>
+          <div class="auth">
+            <div>
+              <img src="./img for blog page/Ellipse 8.svg" alt="" />
+              <div class="ttt"></div>
+            </div>
+            <div class="name">
+              <p style="color: #000000; font-weight: 600">Jennifer</p>
+              <p style="color: #4a4a4a; word-spacing: 6px"><%= article.createdAt.toDateString() %></p>
+            </div>
+          </div>
+        </a>
+        <% }) %>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <img src="./img for blog page/wave (1).svg" alt="" width="80%" class="hh" />
+        <div class="sp">
+          <div class="log">
+            <div style="margin-bottom: 60px">
+              <img src="./img for blog page/Brain wave 1.svg" alt="" />
+            </div>
+            <div>
+              <p style="margin-bottom: 5px">Connection</p>
+              <div class="socials">
+                <a href="">
+                  <img src="./img for blog page/facebook.svg" alt="" />
+                </a>
+                <a href="">
+                  <img src="./img for blog page/twitter.svg" alt="" />
+                </a>
+                <a href="">
+                  <img src="./img for blog page/youtube.svg" alt="" />
+                </a>
+                <a href="">
+                  <img src="./img for blog page/pinterest.svg" alt="" />
+                </a>
+                <a href="">
+                  <img src="./img for blog page/behance.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="explore">
+            <h2>Explorate</h2>
+            <ul>
+              <li>
+                <a href="/aboutus">About</a>
+              </li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Membership</a></li>
+            </ul>
+          </div>
+
+          <div class="message">
+            <input type="text" placeholder="Email" />
+            <button value="Subscribe">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

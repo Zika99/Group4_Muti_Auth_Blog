@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <!-- fonts -->
+    <link href="http://fonts.cdnfonts.com/css/cascadia-code" rel="stylesheet" />
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="login_and_signup.css" />
+    <title>Sign Up | Brain Wave</title>
+  </head>
+  <body>
+    <main>
+      <div class="wave-bg-img">
+        <img src="./img for login and signup page/wave.svg" alt="wave" />
+      </div>
+      <div class="container">
+        <h1>Sign Up</h1>
+        <div class="socials flex">
+          <a href="/auth/google">Authenticate with Google</a>
+          <a class="icon" href="#">
+            <img src="./img for login and signup page/google.svg" alt="instagram icon" />
+          </a>
+          <a class="icon" href="#">
+            <img src="./img for login and signup page/twitter.svg" alt="twitter icon" />
+          </a>
+          <a class="icon" href="#">
+            <img src="./img for login and signup page/linkedin.svg" alt="linkedin icon" />
+          </a>
+        </div>
+        <p class="option-text">or use your email account:</p>
+        <form action="/signup" method="POST">
+          <div class="input-field flex">
+            <span>
+              <img src="./img for login and signup page/mail.svg" alt="mail icon" />
+            </span>
+            <input type="email" name="email" placeholder="Email" inputmode="email" required />
+            <div class="email error"></div>
+          </div>
+          <div class="input-field flex">
+            <span>
+              <img src="./img for login and signup page/shield.svg" alt="shield icon" />
+            </span>
+            <input type="password" name="password" placeholder="Password" required />
+            <div class="password error"></div>
+          </div>
+          <div class="input-field filled flex">
+            <span>
+              <img src="./img for login and signup page/person.svg" alt="person icon" />
+            </span>
+            <input type="text" name="username" placeholder="Preferred Username" required />
+            <div class="username error"></div>
+          </div>
+          <div class="agree-checkbox">
+            <input type="checkbox" name="terms-and-conditions" id="terms-and-conditions" required />
+            <span> I agree to the terms and conditions of Brainwave Inc. </span>
+          </div>
+          <button type="submit" class="submit-btn flex">
+            <span>Continue</span>
+            <span>
+              <img src="./img for login and signup page/circled_arrow.svg" alt="arrow icon" />
+            </span>
+          </button>
+        </form>
+      </div>
+      <p class="copy">All Copyrights reserved for Brainwave Inc.</p>
+    </main>
+  </body>
+</html>
+
+<script>
+  const form = document.querySelector('form');
+
+  const emailError = document.querySelector('.email.error');
+  const passwordError = document.querySelector('.password.error');
+  const usernameError = document.querySelector('.username.error');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    console.log('a');
+
+    // reset values
+
+    emailError.textContent = '';
+    passwordError.textContent = '';
+    usernameError.textContent = '';
+
+    // get the values
+    // const firstName = form.firstName.value;
+
+    // console.log(form.name.value);
+    const email = form.email.value;
+    const password = form.password.value;
+    const username = form.username.value;
+    console.log(email, password, username);
+
+    // if (password !== password2) {
+    //   console.log('password does not match');
+    //   return (password2Error.textContent = 'password does not match');
+    // }
+    try {
+      const res = await fetch('/signup', {
+        method: 'POST',
+        body: JSON.stringify({ email, password, username }),
+        headers: { 'Content-Type': 'application/json' },
+      });
+      const data = await res.json();
+      console.log(data);
+      if (data.errors) {
+        emailError.textContent = data.errors.email;
+        passwordError.textContent = data.errors.password;
+        username.textContent = data.errors.username;
+      }
+      if (data.user) {
+        location.assign('/login');
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  });
+</script>

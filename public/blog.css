@@ -1,0 +1,407 @@
+@import url('http://fonts.cdnfonts.com/css/cascadia-code');
+
+@import url('http://fonts.cdnfonts.com/css/open-sans');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'cascadia-code', sans-serif;
+  width: 100%;
+  max-width: 1440px;
+  /* font-family: 'cascadia-code', sans-serif; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  font-family: 'Cascadia Code', sans-serif;
+  margin-top: 1rem;
+  /* font-weight: 600; */
+  width: 99%;
+  margin: 10px auto;
+  display: flex;
+  /* made it wrap else it will overflow in smaller screen, distorting the design */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.logo {
+  display: flex;
+  flex-basis: 15%;
+  flex-shrink: 0;
+}
+
+.logo img {
+  /* flex-shrink: 0; */
+  width: 90%;
+}
+
+.list1 {
+  flex-basis: 50%;
+}
+
+.list2 {
+  flex-basis: 23%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+nav ul li a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+.nav-items {
+  padding: 1rem 2.1rem;
+  margin-bottom: 5px;
+}
+
+.user {
+  margin-left: 3rem;
+  font-size: 2rem;
+  color: #3e71d4;
+}
+
+.blog {
+  border-bottom: 3px solid #192d55;
+}
+
+hr {
+  background-color: #3e71d4;
+}
+
+.line {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 35px;
+  height: 3px;
+  outline: none;
+  /* margin-top: 5px; */
+  color: #192d55;
+}
+.nav-items2 {
+  padding: 0.5rem 1.5em;
+}
+
+.signup {
+  color: #ffffff;
+  background-color: #192d55;
+  border-radius: 15px;
+}
+
+header {
+  /* display: flex; */
+  width: 96%;
+  margin: 50px auto;
+  /* background-color: #315AA9; */
+}
+
+.header {
+  /* padding: 1rem; */
+  display: flex;
+  flex-direction: column;
+  background-color: #315aa9;
+  position: relative;
+  height: 200px;
+  border-radius: 30px;
+}
+
+.header img {
+  /* width: 50%; */
+}
+
+.header h3 {
+  font-family: 'Cascadia Code', sans-serif;
+  color: #ffffff;
+  text-align: center;
+  font-size: 3rem;
+  z-index: 1000;
+  top: 80px;
+  left: 50px;
+  right: 50px;
+  position: absolute;
+  /* margin-top: 50px; */
+}
+
+.spk {
+  position: absolute;
+  left: 25%;
+  top: 15%;
+}
+
+.spkk {
+  position: absolute;
+  left: 5%;
+  top: -15%;
+}
+.circ1 {
+  position: absolute;
+  left: 17%;
+  top: 20%;
+  z-index: 10000;
+}
+
+.circ2 {
+  position: absolute;
+  right: 15%;
+  bottom: 18%;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.inp {
+  font-family: 'Cascadia Code', sans-serif;
+
+  margin: 0 auto;
+  position: absolute;
+  bottom: -20%;
+  /* text-align: center; */
+  left: 0;
+  width: 43%;
+  padding: 30px 90px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  right: 0;
+  box-shadow: 1px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.input img {
+  position: absolute;
+  bottom: -7%;
+  left: 30%;
+}
+
+.container {
+  width: 93%;
+  margin: 0 auto;
+}
+
+.tp {
+  width: 97.5%;
+  font-family: 'Cascadia Code', Consolas, 'Courier New', monospace;
+  display: flex;
+  font-weight: 600;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topics {
+  padding: 0.8rem 0;
+  margin-bottom: 20px;
+}
+
+.all {
+  background-color: #192d55;
+  padding: 10px 12px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.all a {
+  color: #fff;
+}
+
+.card {
+  position: relative;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  /* height: 650px; */
+  /* white-space: nowrap; */
+}
+
+.sub {
+  color: #3e71d4;
+  font-family: 'Cascadia Code', Consolas, 'Courier New', monospace;
+  font-weight: 600;
+  font-size: 1.7rem;
+  margin-bottom: 25px;
+  line-height: 1.8rem;
+  word-spacing: 8px;
+}
+
+.articles {
+  /*the grid was bigger than the body, it overflowed*/
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+
+  gap: 40px;
+}
+/*added a new class for the images in the article we need to make them reposive and not static */
+.article-img {
+  width: 370px;
+  height: 370px;
+  border-radius: px;
+}
+
+.first {
+  border-radius: 80px;
+}
+.crdimg {
+  /* margin-top: 10px; */
+  /* position: relative; */
+}
+
+.ttt {
+  position: relative;
+}
+
+.xxx {
+  color: #4a4a4a;
+  /* margin-top: 25px; */
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-family: sans-serif;
+  /* line-height: 1.5rem; */
+  word-spacing: 7px;
+}
+
+.auth {
+  display: flex;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.name {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  font-family: 'Cascadia Code', Consolas, 'Courier New', monospace;
+}
+
+footer {
+  background-color: #315aa9;
+}
+
+.footer {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* background-color: #315AA9; */
+  height: 270px;
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+  position: relative;
+  margin-top: 100px;
+  padding: 3rem 1rem 2rem 1rem;
+}
+
+.hh {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.sp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.log {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.socials a {
+  text-decoration: none;
+}
+
+.explore ul {
+  list-style-type: none;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.explore ul li {
+  padding: 0.3rem 0;
+  cursor: pointer;
+}
+
+.explore ul li a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.message input {
+  width: 63%;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.message button {
+  margin-left: -10px;
+  padding: 0.5rem 1rem;
+  border: 0;
+  outline: 0;
+  color: white;
+  border-radius: 10px;
+  background-color: #192d55;
+}
+
+.wrapper {
+  height: 80vh;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.back {
+  margin-top: 15px;
+  background-color: #192d55;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-family: 'cascadia-code', sans-serif;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* MEDIA QUERIES FOR BLOG PAGE STARTS HERE */
+
+@media screen and (max-width: 700px) {
+  .articles {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .nav-items {
+    padding: unset;
+    margin-bottom: 5px;
+  }
+
+  /* .hero img{
+      width: 100%;
+    } */
+}
+/* MEDIA QUERIES FOR BLOG PAGE ENDS HERE */
