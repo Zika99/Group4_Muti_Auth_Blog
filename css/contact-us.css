@@ -140,6 +140,10 @@ textarea::placeholder{
   margin-bottom: 35px;
 }
 
+.send-now-button:hover{
+  background: #3e71d4;
+}
+
 
 
 .send-now-imgg{
