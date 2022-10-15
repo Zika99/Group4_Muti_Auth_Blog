@@ -28,3 +28,10 @@
 }
 
 
+@media (min-width: 200px) and (max-width: 425px) {
+    .loader{
+        width: 150px;
+        height: 150px;
+        margin-top: 25%;
+    }
+}
