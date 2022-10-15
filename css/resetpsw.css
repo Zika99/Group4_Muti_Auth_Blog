@@ -60,44 +60,29 @@ main {
 	max-width: 500px;
 	margin: auto;
 	flex-grow: 1;
+	margin-top: 5rem;
 }
 
 .container h1 {
 	color: var(--blue);
+	font-family: "Cascadia Code", sans-serif;
+}
+.container p{
+	margin-top: 2rem;
 }
 
-.socials {
-	gap: 0.5rem;
-	margin: 2rem 0;
-}
-
-.socials .icon {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: 1px solid var(--blue);
-	border-radius: 50%;
-	width: 50px;
-	height: 50px;
-	transition: var(--transition);
-}
-
-.socials .icon img {
-	width: 60%;
-}
-
-.socials .icon:hover {
-	background-color: var(--light-blue);
-}
 
 .option-text {
 	font-size: 1.1rem;
 	color: var(--blue);
 	margin-bottom: 2rem;
 }
-
+.form{
+	margin-top: 3rem;
+}
 form .input-field {
-	margin-bottom: 2rem;
+	margin-top: 2rem;
+	margin-bottom: 3rem;
 	background-color: transparent;
 	padding: 0.8rem;
 	border-radius: 0.8rem;
@@ -178,12 +163,7 @@ form .submit-btn span img {
 	font-size: 0.875rem;
 }
 
-.agree-checkbox {
-	color: var(--green);
-	margin-bottom: 3rem;
-	font-size: 0.875rem;
-	text-align: left;
-}
+
 
 .copy {
 	margin-top: 5rem;

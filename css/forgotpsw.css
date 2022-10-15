@@ -59,6 +59,7 @@ main {
 	max-width: 500px;
 	margin: auto;
 	flex-grow: 1;
+	padding-top: 80px;
     /* padding-top: -200px; */
    
 }
@@ -66,8 +67,8 @@ main {
 .container h1 {
 	color: var(--blue);
 }
-.forgot-p{
-    padding-top: 20px;
+.forg-p{
+    padding-top: 40px;
 }
 .option-text {
 	font-size: 1.1rem;
@@ -77,6 +78,7 @@ main {
 
 form .input-field {
 	margin-bottom: 2rem;
+	margin-top: 3rem;
 	background-color: transparent;
 	padding: 0.8rem;
 	border-radius: 0.8rem;
@@ -157,12 +159,7 @@ form .submit-btn span img {
 	font-size: 0.875rem;
 }
 
-.agree-checkbox {
-	color: var(--green);
-	margin-bottom: 3rem;
-	font-size: 0.875rem;
-	text-align: left;
-}
+
 
 .copy {
 	margin-top: 5rem;
