@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/pre-loader.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <title>Brainwave</title>
 </head>
@@ -50,9 +51,14 @@
             </div>
           </nav>
 
+          <div>
+          <section>
+            <p class="loader" id="first-load"> </p>
+        </section>
         
 
         <!-- Header Section -->
+        <div class="second-load">
         <header>
 
             <div class="header-box">
@@ -470,6 +476,7 @@
             </div>
         </section>
     </div>
+    </div>
 
     <footer>
         <div class="div-footer-one">
@@ -507,6 +514,19 @@
         </div>
       </footer>
     <script src="theme.js"></script>
+
+    <script>
+        var hidden = false;
+    
+        setInterval(function () {
+          document.getElementById("first-load").style.display = "none";
+        }, 2000)
+    
+        setTimeout(() => {
+          document.querySelector('.second-load').style.display = 'block'
+        }, 2000)
+    
+      </script>
 </body>
 
 </html>
