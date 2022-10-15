@@ -1,4 +1,5 @@
 :root {
+	--bgColor: #f5f5f5;
 	--red: #ff0d0d;
 	--blue: #315aa9;
 	--green: #04aa47;
@@ -21,7 +22,7 @@
 body {
 	font-size: 1rem;
 	min-height: 100vh;
-	background-color: #f5f5f5;
+	background-color: var(--bgColor);
 	font-family: "Cascadia Code", sans-serif;
 }
 
@@ -108,11 +109,6 @@ form .input-field:focus-within {
 	box-shadow: 0 1px 8px var(--blue-shadow);
 }
 
-form .input-field.filled {
-	background-color: var(--light-blue);
-	border: none;
-}
-
 form .input-field.filled:focus-within {
 	box-shadow: 0 1px 8px var(--blue-shadow);
 }
@@ -134,9 +130,9 @@ form .input-field input {
 	font-family: "Cascadia Code", sans-serif;
 }
 
-form .submit-btn {
+.submit-btn {
 	display: flex;
-	gap: 1rem;
+	gap: 1.5rem;
 	font-size: 1rem;
 	width: 100%;
 	border: none;
@@ -149,38 +145,64 @@ form .submit-btn {
 	font-family: "Cascadia Code", sans-serif;
 }
 
-form .submit-btn:hover {
+.submit-btn:hover {
 	background-color: var(--bright-blue);
 }
 
-form .submit-btn:active {
+.submit-btn:active {
 	background-color: var(--dark-blue);
 }
 
-form .submit-btn span {
+.submit-btn span {
 	display: flex;
 	align-items: center;
 }
 
-form .submit-btn span img {
+.submit-btn span img {
 	width: 50%;
 }
 
 .forgot-password {
 	display: block;
 	color: var(--red);
-	margin-bottom: 3rem;
+	margin-bottom: 1rem;
 	font-size: 0.875rem;
 }
 
 .agree-checkbox {
 	color: var(--green);
-	margin-bottom: 3rem;
+	margin-bottom: 2rem;
 	font-size: 0.875rem;
 	text-align: left;
 }
 
 .copy {
+	font-family: sans-serif;
 	margin-top: 5rem;
 	font-size: 0.75rem;
+}
+
+.divider {
+	position: relative;
+	margin: 2rem 0;
+}
+
+.divider span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	background-color: var(--bgColor);
+	padding: 0 1.5rem;
+}
+
+.divider hr {
+	height: 1px;
+	border: none;
+	background-color: black;
+}
+
+.new-user {
+	color: #555555;
+	margin: 3rem 0 1rem;
 }

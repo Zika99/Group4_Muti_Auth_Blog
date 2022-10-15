@@ -1,0 +1,136 @@
+:root {
+	--gray: #868686;
+	--darkBlue: #315aa9;
+	--white: #ffffff;
+	--blue: #a5c3ff;
+	--greenishBlue: #a2d6d8;
+	--cream: #bcbcbc;
+	--transition: all 0.2s ease-in-out;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	align-items: center;
+	font-size: 1rem;
+	min-height: 100vh;
+	padding: 1rem;
+	font-family: "Cascadia Code", sans-serif;
+}
+
+main {
+	flex: 1;
+	text-align: center;
+	max-width: 768px;
+	margin: auto;
+}
+
+h1 {
+	margin: 1rem 0;
+}
+
+p {
+	color: var(--gray);
+	font-family: sans-serif;
+}
+
+.illustration {
+	position: relative;
+	margin: 3rem 0;
+}
+
+.illustration:before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	translate: -50% -50%;
+	width: 50%;
+	height: 50%;
+	background: var(--blue);
+	box-shadow: inset 97px 131px 100px var(--greenishBlue);
+	filter: blur(100px);
+	border: 5px solid var(--cream);
+	transform: matrix(0.78, -0.54, 0.71, 0.8, 0, 0);
+}
+
+.illustration:after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	translate: -50% -50%;
+	width: 50%;
+	height: 50%;
+	background: var(--blue);
+	box-shadow: inset 97px 131px 100px var(--greenishBlue);
+	filter: blur(100px);
+	border: 5px solid var(--cream);
+	transform: matrix(0.78, 0.54, -0.71, 0.8, 0, 0);
+}
+
+.illustration img {
+	position: relative;
+	z-index: 2;
+	width: 30%;
+}
+
+.illustration .bg-blur {
+	position: absolute;
+	z-index: 1;
+	left: 50%;
+	top: 50%;
+	translate: -50% -50%;
+	width: 50%;
+	height: 100%;
+	border-radius: 50%;
+	background: var(--blue);
+	box-shadow: inset 97px 131px 100px var(--greenishBlue);
+	filter: blur(100px);
+}
+
+.btn {
+	display: block;
+	padding: 1rem 0;
+	max-width: 400px;
+	margin: auto;
+	border-radius: 1.3rem;
+	font-family: "Cascadia Code", sans-serif;
+	transition: var(--transition);
+}
+
+.btn.primary {
+	margin-bottom: 1rem;
+	background: var(--darkBlue);
+	color: var(--white);
+	border: 2px solid var(--darkBlue);
+}
+
+.btn.inverted {
+	background-color: var(--white);
+	color: black;
+	border: 2px solid var(--darkBlue);
+}
+
+.btn.primary:hover {
+	background-color: var(--white);
+	color: black;
+}
+
+.btn.inverted:hover {
+	background: var(--darkBlue);
+	color: var(--white);
+}
+
+@media screen and (max-width: 480px) {
+	.illustration img {
+		width: 70%;
+	}
+}
