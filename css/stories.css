@@ -1,0 +1,102 @@
+:root {
+	--blue: #3e71d4;
+	--darkBlue: #192d55;
+	--gray: #555555;
+	--lightGray: #aaaaaa;
+	--darkerGray: #868686;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+body {
+	font-size: 1rem;
+	min-height: 100vh;
+	font-family: "Cascadia Code", sans-serif;
+}
+
+h1,
+h3 {
+	color: var(--blue);
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+
+.title {
+	padding: 1rem;
+	margin-bottom: 2rem;
+}
+
+.title a {
+	display: inline-block;
+	border-radius: 0.7rem;
+	padding: 0.5rem 1rem;
+	background-color: var(--darkBlue);
+	color: white;
+	margin-bottom: 0.5rem;
+}
+
+.story-pages {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 1rem 0.3rem;
+	border-bottom: 1px solid var(--lightGray);
+}
+
+.story-pages li a {
+	color: var(--gray);
+	font-size: 1.2rem;
+}
+
+.drafts {
+	padding: 0 1rem 1rem;
+}
+
+.story-pages li a.active {
+	color: black;
+}
+
+.drafts .item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 0 0.7rem;
+}
+
+.drafts .item:not(:last-child) {
+	margin: 2rem 0;
+	border-bottom: 1px solid var(--lightGray);
+}
+
+.drafts .item p {
+	color: var(--darkerGray);
+}
+
+.nav-menu {
+	margin-top: auto;
+}
+
+.nav-menu ul {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding-bottom: 1rem;
+}
