@@ -10,37 +10,45 @@
       src="https://kit.fontawesome.com/0ccf69e2e1.js"
       crossorigin="anonymous"
     ></script>
-    <title>About Us</title>
+    <title>Brainwave | About Us</title>
   </head>
   <body>
     <header>
-      <nav>
-        <i class="fa fa-bars"></i>
-        <div class="logo-div-header">
-          <img src="images/brainwave logo 2.svg" alt="brainwave logo" class="logo-div"/>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="./index.html"><img src="./img for blog page/brainwave logo 2.svg" alt="" /></a>
         </div>
-        <div class="nav-list">
-          <div class="nav-list-div">
-          <ul class="header-ul">
-            <li class="header-list"><a href="./index.html" class="header-link">Home</a></li>
-            <li class="header-list">
-              <a href="./blog.html" class="header-link">Blogs</a>
-            </li>
-            <li class="header-list">
-              <a href="" class="header-link">Write</a>
-            </li>
-            <li class="header-list">
-              <a href="" class="header-link about">About Us</a>
-            </li>
-          </ul>
-            <ul class="header-ul left">
-              <li class="header-list-left">
-                <a href="" class="header-link">Login</a>
-              </li>
-              <button class="header-btn">Sign Up</button>
-            </ul>
-          </div>
-          </div>
+        <div>
+        <ul class="list1">
+          <li class="nav-items">
+            <a href="./index.html"><p class="ho">Home</p></a>
+           
+          </li>
+          <li class="nav-items">
+            <a href="./blog.html"><p class="ho">Blog</p></a>
+          </li>
+          <li class="nav-items">
+            <a href="./write.html"><p class="ho">Write</p></a>
+          </li>
+          <li class="nav-items">
+            <a href="./aboutus.html"><p class="ho">About Us</p></a>
+            <hr class="line" />
+          </li>
+        </ul>
+    </div>
+    <div>
+        <ul class="list2">
+          <li class="nav-items2">
+            <a href="./login.html"><p class="ho">Login</p></a>
+          </li>
+          <li class="nav-items2 signup">
+            <a href="./signup.html" style="color: #fff">Sign up</a>
+          </li>
+        </ul>
+    </div>
+    <div class="toggle">
+        <label  id="dark-change"></label>
+        </div>
       </nav>
     </header>
     <div class="container">
@@ -99,10 +107,10 @@
         </div>
         <div class="subscibe">
           <input type="email" placeholder="Email" required/>
-          <button class="footer-btn">Subscibe</button>
+          <button class="footer-btn">Subscribe</button>
         </div>
       </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="theme.js"></script>
   </body>
 </html>

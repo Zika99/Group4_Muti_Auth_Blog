@@ -118,7 +118,8 @@ margin-bottom: 45px;
 .buttonn-1{
   /* padding: 40px; */
   font-size: 20px;
-  background: #315aa9;
+  /* background: #315aa9; */
+  background: #a4c3fe;
   margin-top: 30px;
   border: none;
   border-radius: 22.77px;
@@ -128,11 +129,11 @@ margin-bottom: 45px;
 
 }
 
-/* .buttonn-1:hover{
-  background: #fff;
-  color: black;
+ .buttonn-1:hover{
+  background: #315AA9;
+  color: #fff;
   border: 2px solid #315AA9;
-} */
+} 
 
 .discover-btn{
   color: black;
@@ -158,7 +159,14 @@ justify-content: center;
 text-align: center;
 margin-top: 120px;
 margin-bottom: 50px;
+background: #315AA9;
 }
+
+
+.last-btnn:hover{
+  background: #3e71d4;
+}
+
 
 
 
@@ -313,7 +321,7 @@ margin-bottom: 50px;
 .steps-header{
   width: 100%;
   /* height: 58px; */
-  border-bottom: 10px solid #4a87fe;
+  border-bottom: 13px solid #4a87fe;
   padding-top: 30px;
   /* padding-bottom: 5px; */
   /* display: flex;
@@ -325,6 +333,7 @@ margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
   /* border: 5px solid indigo; */
+  padding-bottom: 15px;
   margin: auto;
   width: 85%;
 }
@@ -437,6 +446,10 @@ color: #555555;
   border-radius: 5px;
   color: #fff;
   font-family: cascadia code;
+}
+
+.submitt:hover{
+  background: #3e71d4;
 }
 
 
