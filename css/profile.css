@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Cascadia code, sans-serif;
+}
+
+h4 {
+    color: #315aa9;
+}
+
+p,
+li {
+    font-family: open sans, sans-serif;
+    color: rgb(53, 52, 52);
+}
+
+nav {
+    grid-area: nav;
+    position: fixed;
+    height: 100vh;
+    box-shadow: 2px 0 10px rgb(218, 214, 214);
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.curve3,
+.curve2,
+.curve1 {
+    position: absolute;
+    opacity: 0.3;
+}
+
+.curve3 {
+    bottom: 5rem;
+    left: 0;
+}
+
+.curve2 {
+    bottom: 2rem;
+    left: 0;
+}
+
+.curve1 {
+    bottom: -2.2rem;
+    left: 2rem;
+}
+
+.logo {
+    width: 75%;
+}
+
+.nav-icons {
+    margin: 5rem;
+}
+
+.nav-icons img {
+    display: block;
+    margin-top: 2rem;
+    width: 80%;
+}
+
+/* -------------------------START OF TOGGLE SECTION-------------- */
+
+.switch {
+    position: absolute;
+    display: inline-block;
+    width: 65px;
+    height: 32px;
+    right: 16px;
+    top: 16px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    border: 2px solid #0F1B33;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 4px;
+    bottom: 2.6px;
+    background-color: #0F1B33;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: rgb(53, 52, 52);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px rgb(53, 52, 52);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* -----------------END OF TOGGLE SECTION------------------------ */
+/* -----------------START OF MAIN SECTION------------------------ */
+hr {
+    width: 84.5%;
+    margin-left: 12.2rem;
+}
+
+header,
+main {
+    padding-left: 12.2rem;
+    padding-top: 4.5rem;
+}
+
+.header {
+    margin-left: 1.5rem;
+}
+
+.detail {
+    margin: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.three {
+    width: 60%;
+}
+
+.four {
+    width: 55%;
+}
+
+.text {
+    width: 40%;
+}
+
+ul {
+    list-style: none;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+button {
+    width: 6rem;
+    border-radius: 10px;
+    background-color: #0F1B33;
+    border: none;
+    color: #fff;
+    height: 2rem;
+    cursor: pointer;
+}

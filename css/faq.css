@@ -9,6 +9,37 @@
 html{
     scroll-behavior: smooth;
 }
+
+label {
+  position: absolute;
+  width: 45px;
+  height: 27px;
+  right: 40px;
+  top: 30px;
+  border: 2px solid #192d55;
+  border-radius: 20px;
+}
+label:before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  left: 1px;
+  top: 1px;
+  border-radius: 50%;
+  background: #192d55;
+  cursor: pointer;
+  transition: 0.4s;
+}
+label.active:before {
+  left: 24px;
+  background: #fff;
+}
+body.night {
+  background: #000;
+  color: #fff;
+}
+
   
   .navbar {
     font-family: 'Cascadia Code', sans-serif;
@@ -128,80 +159,98 @@ html{
     background-color: #ffffff;
   }
 
-  footer {
-    background-color: #315aa9;
-  }
   
-  .footer {
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* background-color: #315AA9; */
-    height: 270px;
-    width: 100%;
-    margin: 0 auto;
-    color: #fff;
-    position: relative;
-    margin-top: 100px;
-    padding: 3rem 1rem 2rem 1rem;
-  }
-  
-  .hh {
-    position: absolute;
-    top: 10%;
-    left: 10%;
-  }
-  
-  .sp {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .log {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .socials a {
-    text-decoration: none;
-  }
-  
-  .explore ul {
-    list-style-type: none;
-    padding: 0.5rem 0;
-    /* cursor: pointer; */
-  }
-  
-  .explore ul li {
-    padding: 0.3rem 0;
-    /* cursor: pointer; */
-  }
-  
-  .explore ul li a {
-    /* text-decoration: none; */
-    color: #fff;
-    /* cursor: pointer; */
-  }
-  
-  .message input {
-    width: 63%;
-    padding: 0.5rem;
-    border: none;
-    outline: none;
-    border-radius: 5px 0 0 5px;
-  }
-  
-  .message button {
-    margin-left: -10px;
-    padding: 0.5rem 1rem;
-    border: 0;
-    outline: 0;
-    color: white;
-    border-radius: 10px;
-    background-color: #192d55;
-  }
+footer {
+  background-image: url(images/wave.png);
+  background-repeat: no-repeat;
+  background-color: #315aa9;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: #fff;
+  padding: 3em 1em;
+  margin-top: 30px;
+  font-family: "Cascadia Code", Consolas, "Courier New", monospace;
+  min-height: 40vh;
+}
+.logo-div-footer {
+  margin-bottom: 1em;
+}
+h4 {
+  margin-bottom: 1em;
+}
+.social {
+  font-family: "Lora", sans-serif;
+  font-weight: 700;
+}
+.fa-brands {
+  margin-right: 1em;
+}
+.fa-brands:hover {
+  color: rgba(170, 170, 170, 1);
+}
+.footer-ul {
+  display: block;
+}
+.footer-li {
+  margin-bottom: 1em;
+  list-style: none;
+}
+.footer-link {
+  color: #fff;
+  margin-bottom: 1em;
+}
+.footer-link:active {
+  color: rgba(85, 85, 85, 1);
+}
+input {
+  width: 80%;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 0.5rem;
+  font-family: "Cascadia Code", Consolas, "Courier New", monospace;
+  position: relative;
+}
+input:placeholder-shown {
+  color: rgba(170, 170, 170, 1);
+  letter-spacing: 1.1px;
+}
+.footer-btn {
+  position: absolute;
+  right: 7em;
+  background-color: #000;
+  color: #fff;
+  padding: 1em;
+  border: none;
+  border-radius: 1rem;
+  width: 10%;
+  font-family: "Cascadia Code", Consolas, "Courier New", monospace;
+}
+.footer-btn:hover,
+.footer-btn:active {
+  transform: translateX(3px);
+}
 
 
+.wrapper {
+  height: 80vh;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.back {
+  margin-top: 15px;
+  background-color: #192d55;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-family: 'cascadia-code', sans-serif;
+  text-decoration: none;
+  border-radius: 5px;
+}
   .accordion-body p{
     padding: 1rem 1.5rem;
     line-height: 1.8;

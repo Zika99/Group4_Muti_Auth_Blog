@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/pre-loader.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    <title>Brain wave Landing Page</title>
+    <title>Brainwave</title>
 </head>
 
 <body>
@@ -16,57 +17,74 @@
     <div class="body-cont">
         <nav class="navbar">
             <div class="logo">
-              <img src="./img for blog page/brainwave logo 2.svg" alt="" />
+              <a href="./index.html"><img src="./img for blog page/brainwave logo 2.svg" alt="" /></a>
             </div>
+            <div>
             <ul class="list1">
               <li class="nav-items">
-                <a href="./index.html">Home</a>
+                <a href="./index.html"><p class="ho">Home</p></a>
                 <hr class="line" />
               </li>
               <li class="nav-items">
-                <a href="./blog.html">Blog</a>
+                <a href="./blog.html"><p class="ho">Blog</p></a>
               </li>
               <li class="nav-items">
-                <a href="./write.html">Write</a>
+                <a href="./write.html"><p class="ho">Write</p></a>
               </li>
               <li class="nav-items">
-                <a href="./aboutus.html">About Us</a>
+                <a href="./aboutus.html"><p class="ho">About Us</p></a>
               </li>
             </ul>
-      
+        </div>
+        <div>
             <ul class="list2">
               <li class="nav-items2">
-                <a href="#">Login</a>
+                <a href="./login.html"><p class="ho">Login</p></a>
               </li>
               <li class="nav-items2 signup">
-                <a href="#" style="color: #fff">Sign up</a>
+                <a href="./signup.html" style="color: #fff">Sign up</a>
               </li>
             </ul>
+        </div>
+        <div>
+            <label  id="dark-change"></label>
+            </div>
           </nav>
 
+          <div>
+          <section>
+            <p class="loader" id="first-load"> </p>
+        </section>
         
 
         <!-- Header Section -->
+        <div class="second-load">
         <header>
 
             <div class="header-box">
                 <img src="./land imgs/wave (3).svg" alt="" class="wave">
 
                 <div class="header-cont">
+                    <div class="girl-img-m">
+                        <img src="./land imgs/young woman studying online.svg" alt="" class="" width="90%">
+                    </div>
                     <div class="true-content">
+
                         <h1 class="true-h1">Be the True Wave
                             and Inspire others</h1>
                         <p class="true-p">Write your valuable ideas and read them
                             later in FREE format.</p>
-                        <button class="write-btn"><a class="write-txt" href="">Write</a></button>
+                        <button class="write-btn"><a class="write-txt" href="./write.html">Write</a></button>
                     </div>
                     
                     <div class="girl-img">
-                        <img src="./land imgs/young woman studying online.svg" alt="" class="" width="90%">
+                        <img src="./land imgs/young woman studying online.svg" alt="" class="" width="100%">
                     </div>
                 </div>
 
             </div>
+
+            
            
             <div>
                 <!-- <img class="true-wave" src="land imgs/true-wave-group.svg"> -->
@@ -78,7 +96,8 @@
         
        
         <!-- Trending Section -->
-        <div class="trend-nav">
+        <div class="trend-main-nav">
+            <div class="trend-nav">
             <h2 class="t-wave-h2">Trending on Wave</h2>
             <div class="arrows">
                 <div class="left-arrow">
@@ -91,12 +110,12 @@
 
 
             </div>
-
+            </div>
         </div>
 
 
         <div class="trend-container">
-            <div>
+            <div class="sec-trend" id= "mobile">
                 <div>
                     <div class="trend-card">
                         <img src="land imgs/ambition.svg" class="dream" style="width: 378.91px; height: 343.62px;">
@@ -125,9 +144,9 @@
             <div class="sec-trend">
                 <div>
                     <div class="trend-card">
-                        <img src="land imgs/Richird-norton.svg" style="width: 378.91px; height: 343.62px;">
-                        <h2 class="dest">Richird Norton
-                            photorealistic rendering as real photos</h2>
+                        <img class="rich" src="land imgs/Richird-norton.svg">
+                          <a href="./preview.html"><h2 class="dest"> Richird Norton
+                            photorealistic rendering as real photos</h2></a>
                         <p class="p3-trend">Progressively incentivize cooperative systems through technically sound functionalities. Credibly productivate seamless data with flexible schemas.</p>
                     </div>
 
@@ -149,10 +168,10 @@
             </div>
 
             <!-- Third trend -->
-            <div>
+            <div class="sec-trend">
                 <div>
                     <div class="trend-card">
-                        <img src="land imgs/hidden-cause.svg" style="width: 378.91px; height: 343.62px;">
+                        <img class="rich" src="land imgs/hidden-cause.svg">
                         <h2 class="dest">The Hidden Cause of Burnout Nobody Wants to Admit</h2>
                         <p class="p1-trend">It’s embarrassing. But it shouldn’t be. — I worked with a man everyone
                             liked.
@@ -163,7 +182,7 @@
 
                 </div>
 
-                <div class="auth-cont3">
+                <div class="auth-cont3" id="kar">
                     <img src="land imgs/karen.svg">
                     <div class="auth-right">
                         <h3>Karen Nimbo</h3>
@@ -189,10 +208,10 @@
                     <a class="late" href="">Latest Post</a>
                 </li>
                 <li class="right-nav">
-                    <a class="mon" id="all" href="">All</a>
-                    <a class="mon" href="">Technology</a>
-                    <a class="mon" href="">Money</a>
-                    <a class="mon" href="">Business</a>
+                    <a class="mon" id="all" href="#">All</a>
+                    <a class="mon" href="./technology.html">Technology</a>
+                    <a class="mon" href="./money.html">Money</a>
+                    <a class="mon" href="#">Business</a>
                 </li>
 
             </ul>
@@ -412,7 +431,7 @@
                         <!-- Top-right-Card-three -->
                         <div class="auth-main-top">
 
-                            <img src="land imgs/art-die.svg">
+                            <img class="art" src="land imgs/art-die.svg">
                             <div class="auth-left-cont">
                                 <h2 class="top-big-h2">“The Art of Dying”: a valuable message from Bruce Lee about our
                                     ego.</h2>
@@ -440,14 +459,14 @@
                 <!-- 
     Category Section -->
                 <div class="categ-sec">
-                    <a href=""><img src="land imgs/lifestyle.svg"></a>
-                    <a href=""><img src="land imgs/tech-categ.svg"></a>
-                    <a href=""><img src="land imgs/arts and deisgn.svg"></a>
-                    <a href=""><img src="land imgs/health-latest.svg"></a>
-                    <a href=""><img src="land imgs/religion-categ.svg"></a>
-                    <a href=""><img src="land imgs/Production.svg"></a>
-                    <a href=""><img src="land imgs/money-categ.svg"></a>
-                    <a href=""><img src="land imgs/Business.svg"></a>
+                    <a href=""><img class="cat" src="land imgs/lifestyle.svg"></a>
+                    <a class="cat" href="./technology.html"><img src="land imgs/tech-categ.svg"></a>
+                    <a class="cat" href=""><img src="land imgs/arts and deisgn.svg"></a>
+                    <a class="cat" href=""><img src="land imgs/health-latest.svg"></a>
+                    <a class="cat" href=""><img src="land imgs/religion-categ.svg"></a>
+                    <a class="cat" href=""><img src="land imgs/Production.svg"></a>
+                    <a class="cat" href="./money.html"><img src="land imgs/money-categ.svg"></a>
+                    <a class="cat" href=""><img src="land imgs/Business.svg"></a>
                     <div class="see-categ">
                         <a href="">
                             <p id="see-txt">See All</p>
@@ -457,52 +476,57 @@
             </div>
         </section>
     </div>
+    </div>
 
     <footer>
-        <div class="footer">
-            <img src="./img for blog page/curve1.svg" alt="" class="cv1" width="45%">
-            <img src="./img for blog page/curve4.svg" alt="" class="cv2" width="65%">
-            <img src="./img for blog page/curve5.svg" alt="" class="cv3">
-            <div class="log">
-                <div style="margin-bottom: 60px;">
-                    <h1>LOGO</h1>
-                </div>
-                <div>
-                    <p style="margin-bottom:5px ;">Connection</p>
-                    <div class="socials">
-                        <a href="">
-                            <img src="./img for blog page/facebook.svg" alt="">
-                        </a>
-                        <a href="">
-                            <img src="./img for blog page/twitter.svg" alt="">
-                        </a>
-                        <a href="">
-                            <img src="./img for blog page/youtube.svg" alt="">
-                        </a>
-                        <a href="">
-                            <img src="./img for blog page/pinterest.svg" alt="">
-                        </a>
-                        <a href="">
-                            <img src="./img for blog page/behance.svg" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="explore">
-                <h2>Explorate</h2>
-                <ul>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact Us</a></li>
-                    <li><a href="">Membership</a></li>
-                </ul>
-            </div>
-
-            <div class="message">
-                <input type="text" placeholder="Email">
-                <button value="Subscribe">Subscribe</button>
-            </div>
+        <div class="div-footer-one">
+          <div class="logo-div-footer">
+            <img src="images/Brain wave 1.svg" alt="brainwave logo" class="footer-logo"/>
+          </div>
+          <div class="social">
+            <h4>Connections</h4>
+            <!-- <div class="social-icons">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-pinterest"></i>
+              <i class="fa-brands fa-behance"></i>
+            </div> -->
+          </div>
         </div>
-    </footer>
+        <div class="footer-list">
+          <ul class="footer-ul">
+            <li class="footer-li"><b>Explore</b></li>
+            <li class="footer-li">
+              <a href="#" class="footer-link">About Us</a>
+            </li>
+            <li class="footer-li">
+              <a href="#" class="footer-link">Contact Us</a>
+            </li>
+            <li class="footer-li">
+              <a href="./faq.html" class="footer-link">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscibe">
+          <input type="email" placeholder="Email" required/>
+          <button class="footer-btn">Subscibe</button>
+        </div>
+      </footer>
+    <script src="theme.js"></script>
+
+    <script>
+        var hidden = false;
+    
+        setInterval(function () {
+          document.getElementById("first-load").style.display = "none";
+        }, 2000)
+    
+        setTimeout(() => {
+          document.querySelector('.second-load').style.display = 'block'
+        }, 2000)
+    
+      </script>
 </body>
 
 </html>

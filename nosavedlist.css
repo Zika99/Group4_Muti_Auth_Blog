@@ -140,6 +140,7 @@ button{
 }
 button:hover{
     transform: translateY(5px);
+    background: #3E71D4;
 }
 .diagonal-lines{
     width: 1.5%;
