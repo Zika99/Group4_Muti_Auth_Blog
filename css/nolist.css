@@ -191,6 +191,14 @@ a{
  font-size:18px;
  color:white
 }
+.main-content .hero .btn:hover{
+  background-color: #356ee0;
+  width: fit-content;
+  padding:12px 25px;
+  border-radius:10px;
+  font-size:18px;
+  color:white
+ }
 .list-plus{
  display: flex;
  justify-content: center;
@@ -297,6 +305,13 @@ a{
  border-radius:10px;
  font-size:18px;
  color:white;
+}
+.main-content .hero .btn:hover{
+  background-color: #356ee0;
+  padding: 5px 10px 5px 10px;
+  border-radius:10px;
+  font-size:18px;
+  color:white;
 }
  .footer-query{
   display: flex;

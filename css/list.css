@@ -10,6 +10,10 @@
  font-family: 'cascadia-code', sans-serif;
 }
 
+a{
+  color: #3E71D4;
+}
+
 p{
  font-family: 'Open+San', sans-serif;
 }
@@ -172,7 +176,7 @@ h1, h2, h3, h4{
 }
 
 .main-content .btn{
-/* display: none; */
+display: none;
  background-color: #192D55;
  width: fit-content;
  padding:12px 15px;
@@ -223,6 +227,7 @@ h1, h2, h3, h4{
  }
  
  .main-content-hero .hero .btn{
+  display: none;
   background-color: #192D55;
   width: fit-content;
   padding: 5px 5px 8px 8px;
@@ -295,7 +300,7 @@ h1, h2, h3, h4{
    padding:12px 15px;
    border-radius:10px;
    font-size:18px;
-   color:white
+   color: #ffffff;
   }
 
 .header-logo{
@@ -351,13 +356,14 @@ h1, h2, h3, h4{
   padding-right: 10px;
   /* display: flex; */
  }
+ /*  
  .main-content-hero .hero .hero-heading{
   color: green;
   display: flex;
   flex-direction: column;
   padding-bottom: 20px;
-  
  }
+  */
  .main-content-hero .hero .hero-heading>h1{
  color: #ffffff;
  font-size: 14.5px;
