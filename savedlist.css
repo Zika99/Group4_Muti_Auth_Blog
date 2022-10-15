@@ -88,12 +88,14 @@ nav{
 }
 .name-logo{
     margin-top: 8em;
-    background-color: #3E71D4;
+    /* background-color: #3E71D4; */
     color: #fff;
     padding: 0.7em;
     border-radius: 50%;
    margin-bottom: 0;
    opacity: 1;
+   text-decoration: none;
+   list-style: none;
 }
 .name-logo:hover{
     cursor: pointer;
@@ -151,6 +153,7 @@ button{
 }
 button:hover{
     transform: translateY(5px);
+    background: #4A87FE;
 }
 .diagonal-lines{
     width: 1.5%;
