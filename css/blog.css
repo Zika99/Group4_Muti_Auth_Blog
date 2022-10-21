@@ -69,6 +69,7 @@ body.night {
   }
   nav {
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     margin: 1em 3em 0.5em 3em;
     align-items: center;
@@ -742,6 +743,15 @@ body.night {
   @media screen and (max-width: 763px ) {
     nav{
       /* display: none; */
+    }
+
+    .header-ul{
+      display: none;
+
+    }
+
+    .left{
+      display: none;
     }
   }
 
