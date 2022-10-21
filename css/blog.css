@@ -23,7 +23,7 @@ label {
   width: 45px;
   height: 27px;
   right: 40px;
-  top: 30px;
+  /* top: 30px; */
   border: 2px solid #192d55;
   border-radius: 20px;
 }
@@ -62,18 +62,21 @@ body.night {
     font-family: "Cascadia Code", Consolas, "Courier New", monospace;
   }
 
-  .logo-div-header{
+  .lg{
     display: flex;
     flex-shrink: 0;
+    display: block;
   }
   nav {
     display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
     margin: 1em 3em 0.5em 3em;
     align-items: center;
     font-size: 1.2rem;
   }
   .nav-list {
-    width: 100%;
+    width: 90%;
   }
   .nav-list-div {
     margin: 0 auto;
@@ -86,7 +89,7 @@ body.night {
   }
   .left {
     margin-left: auto;
-    align-items: center;
+    /* align-items: center; */
   }
   ul {
     list-style: none;
@@ -99,10 +102,10 @@ body.night {
     /* text-decoration: underline; */
   }
   .header-list {
-    margin-left: 2em;
+    padding: 0 1em;
   }
   .header-list-left {
-    margin-right: 1em;
+    padding: 0 0.7em;
     margin-top: 0.3em;
   }
   .header-link {
@@ -125,12 +128,13 @@ body.night {
     font-family: "Cascadia Code", Consolas, "Courier New", monospace;
     font-size: 1.2rem;
   }
+
+  .header-btn:hover{
+    background: #4A87FE;
+}
+
   .header-link:hover{
     color:#3e71d4;
-  }
-  .header-btn:hover {
-    opacity: 0.8;
-    transform: translateY(-3px);
   }
   .topics:hover{
     color:#3e71d4;
@@ -266,21 +270,24 @@ body.night {
   }
   
   .card {
-    position: relative;
+    /* position: relative; */
     text-decoration: none;
-    /* display: flex; */
-    justify-content: space-evenly;
+    display: flex;
+    /* justify-content: space-evenly; */
     flex-direction: column;
-    /* height: 650px; */
+    padding: 0 12px;
+    /* max-height: 680px; */
+    height: 680px;
     /* white-space: nowrap; */
   }
   
   .sub {
     color: #3e71d4;;
     font-family: "Cascadia Code",Consolas,'Courier New',monospace;
+    text-align: left;
     font-weight: 600;
     font-size: 1.7rem;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
     line-height: 1.8rem;
     word-spacing: 8px;
   }
@@ -289,8 +296,25 @@ body.night {
     /*the grid was bigger than the body, it overflowed*/
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    justify-content: center;
+    align-items: center;
   
     gap: 40px;
+  }
+  .card{
+    /* padding: 0 12px; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* text-align: center; */
+  }
+
+  .card:hover{
+    transform: translateY(-5px);
+  box-shadow: 1px 4px 3px 2px rgba(0, 0, 0, 0.25);
+  /* padding: 0 5px; */
+  /* box-shadow: 0 0 0 #4a4a4a;
+  opacity: 0.5; */
   }
   /*added a new class for the images in the article we need to make them reposive and not static */
   .article-img {
@@ -315,6 +339,7 @@ body.night {
   
   
   .xxx {
+    text-align: left;
     color: #4a4a4a;
     /* margin-top: 25px; */
     font-size: 1rem;
@@ -594,13 +619,17 @@ body.night {
       font-size: 1rem;
     }
     .logo-div {
-      width: 80%;
+      width: 70%;
     }
     .header-btn {
       font-size: 1rem;
     }
     .left {
       margin-right: 1em;
+    }
+
+    .header-list{
+      padding: 0 0.5em;
     }
     .main-img-p {
       top: 20%;
@@ -709,6 +738,21 @@ body.night {
     /* .tp{
       display: none;
     } */
+  }
+
+  @media screen and (max-width: 763px ) {
+    nav{
+      /* display: none; */
+    }
+
+    .header-ul{
+      display: none;
+
+    }
+
+    .left{
+      display: none;
+    }
   }
 
   @media (max-width: 700px) {
@@ -823,6 +867,7 @@ body.night {
 
     .sub{
       margin-top: 2px;
+      margin-bottom: 10px;
     }
 
     .hero img{
@@ -848,6 +893,10 @@ body.night {
       border-radius: 10px;
       right: 0;
       box-shadow: 1px 3px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .card{
+      height: auto;
     }
   }
 
